@@ -1,0 +1,5 @@
+= 상품
+== 상품 조회
+include::{snippets}/news-controller-test/조회_상품/http-request.adoc[]
+include::{snippets}/news-controller-test/조회_상품/path-parameters.adoc[]
+include::{snippets}/news-controller-test/조회_상품/http-response.adoc[]

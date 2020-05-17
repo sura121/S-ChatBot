@@ -1,0 +1,8 @@
+.+/news/message/{id}+
+|===
+|Parameter|Description
+
+|`+id+`
+|조회대상
+
+|===
