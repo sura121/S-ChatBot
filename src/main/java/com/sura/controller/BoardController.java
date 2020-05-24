@@ -10,6 +10,6 @@ public class BoardController {
     public String main()
     {
         System.out.println("dfadsfsd");
-        return "test1.html";
+        return "test1";
     }
 }

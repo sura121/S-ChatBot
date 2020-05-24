@@ -3,3 +3,10 @@
 include::{snippets}/news-controller-test/조회_상품/http-request.adoc[]
 include::{snippets}/news-controller-test/조회_상품/path-parameters.adoc[]
 include::{snippets}/news-controller-test/조회_상품/http-response.adoc[]
+
+
+== 상품 추가
+include::{snippets}/news-controller-test/조회_상품/http-request.adoc[]
+include::{snippets}/news-controller-test/조회_상품/path-parameters.adoc[]
+include::{snippets}/news-controller-test/조회_상품/http-response.adoc[]
+

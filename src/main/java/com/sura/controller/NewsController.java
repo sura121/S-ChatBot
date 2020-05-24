@@ -1,7 +1,9 @@
 package com.sura.controller;
 
+import com.google.gson.JsonElement;
 import com.sura.domain.MessageVO;
 import com.sura.service.LogService;
+import groovyjarjarantlr.debug.MessageAdapter;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.http.ResponseEntity;
@@ -27,5 +29,15 @@ public class NewsController {
         message.setQuantity(10);
 
         return ResponseEntity.ok(message);
+    }
+
+    @PostMapping(value = "/message/add")
+    public ResponseEntity<?> addNews(@RequestBody MessageVO vo) {
+
+
+        MessageVO message = new MessageVO();
+        message.setCode(200);
+        message.setQuantity(100);
+        return  ResponseEntity.ok(message);
     }
 }

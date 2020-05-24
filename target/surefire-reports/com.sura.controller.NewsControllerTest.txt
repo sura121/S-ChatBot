@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.sura.controller.NewsControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.249 s - in com.sura.controller.NewsControllerTest
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 2.302 s <<< FAILURE! - in com.sura.controller.NewsControllerTest
+상품_추가_1(com.sura.controller.NewsControllerTest)  Time elapsed: 0.166 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.sura.controller.NewsControllerTest.상품_추가_1(NewsControllerTest.java:86)
+
+상품_추가(com.sura.controller.NewsControllerTest)  Time elapsed: 0.01 s  <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<400>
+	at com.sura.controller.NewsControllerTest.상품_추가(NewsControllerTest.java:77)
+
