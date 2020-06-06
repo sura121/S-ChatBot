@@ -84,6 +84,18 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/locale</directory>
+                <filtering>true</filtering>
+                <targetPath>global</targetPath>
+                <includes>
+                    <include>*.xml</include>
+                    <include>*.config</include>
+                    <include>*.properties</include>
+                </includes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
