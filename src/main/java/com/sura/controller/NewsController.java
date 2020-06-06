@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/news")
@@ -39,5 +42,12 @@ public class NewsController {
         message.setCode(200);
         message.setQuantity(100);
         return  ResponseEntity.ok(message);
+    }
+
+    @GetMapping(value = "/message")
+    public ResponseEntity<?> allSearch() {
+
+        List<MessageVO> message = new ArrayList<>();
+        return ResponseEntity.ok(message);
     }
 }
