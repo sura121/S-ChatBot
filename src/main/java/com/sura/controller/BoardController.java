@@ -22,17 +22,19 @@ public class BoardController {
     public String main()
     {
         System.out.println("dfadsfsd");
+        logger.info("Asd");
         return "test1";
     }
 
     @GetMapping(value = "/list")
     public String list(Model model) throws Exception {
 
-        try {
+        List<BoardVO> list = boardService.selectList();
 
-            List<BoardVO> list = boardService.selectList();
+        logger.info(list.toString());
+        try {
             model.addAttribute("list",list);
-            logger.info(list.toString());
+            System.out.println(list.toString());
 
         } catch (Exception e) {
             e.getStackTrace();

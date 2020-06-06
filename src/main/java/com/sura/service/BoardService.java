@@ -5,7 +5,6 @@ import com.sura.repository.BoardRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,7 +13,6 @@ public class BoardService {
 
     private BoardRepository boardRepository;
 
-    @Transactional
     public Long SavePost(BoardVO boardVO) {
 
         return boardRepository.save(boardVO).getPk();
