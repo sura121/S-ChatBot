@@ -13,6 +13,8 @@ import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -28,8 +30,8 @@ public class SChatBotController {
     private MessageService messageService;
 
     @SneakyThrows
-    @PostMapping(value = "/hello")
-    public MessageVO HelloBot(@RequestBody Map<String,Object> params) {
+    @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
+    public MessageVO HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
 
         ObjectMapper mapper = new ObjectMapper();
         String reqJson = mapper.writeValueAsString(params);
