@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/chat")
 public class SChatBotController {
@@ -24,7 +29,20 @@ public class SChatBotController {
     public MessageVO HelloBot() {
         MessageVO message = new MessageVO();
 
-        message.setText("hello");
+        message.setVersion("2.0");
+        List<Map<String,Object>> outputs = new ArrayList<>();
+
+        Map<String,Object> simpleText = new HashMap<>();
+        Map<String,Object> text = new HashMap<>();
+        Map<String,Object> template = new HashMap<>();
+
+        text.put("text","안녕하세요.");
+
+        simpleText.put("simpleText",text);
+        outputs.add(simpleText);
+        template.put("output",outputs);
+        message.setTemplate(template);
+
         return message;
     }
 
