@@ -20,11 +20,11 @@ public class SChatBotController {
     private MessageService messageService;
 
     @GetMapping(value = "/hello")
-    public ResponseEntity<?> HelloBot() {
+    public MessageVO HelloBot() {
         MessageVO message = new MessageVO();
 
         message.setText("hello");
-        return ResponseEntity.ok(message);
+        return message;
     }
 
 }
