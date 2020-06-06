@@ -1,32 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chatbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Chatbot.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/SpringBootApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/SpringBootApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/BoardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/NewsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/domain/BoardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/domain/BoardVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/repository/BoardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/repository/BoardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sura/controller/NewsControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sura/controller/NewsControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Chatbot.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/SpringBootApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/SpringBootApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/controller/BoardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/controller/BoardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/controller/NewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/BoardVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/domain/BoardVO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/repository/BoardRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/repository/BoardRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.controller.NewsControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.controller.NewsControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sura.controller.NewsControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.sura.controller.NewsControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sura/controller/NewsControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sura/controller/NewsControllerTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -573,7 +548,7 @@
       <workItem from="1589690419517" duration="7951000" />
       <workItem from="1589699295880" duration="826000" />
       <workItem from="1589767941533" duration="28526000" />
-      <workItem from="1591417404465" duration="8323000" />
+      <workItem from="1591417404465" duration="8842000" />
     </task>
     <servers />
   </component>
@@ -610,7 +585,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61669000" />
+    <option name="totallyTimeSpent" value="62188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -623,7 +598,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49923897" visible="true" weight="0.2032967" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
