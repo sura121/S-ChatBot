@@ -1,15 +1,17 @@
 package com.sura.controller;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sun.deploy.net.HttpResponse;
 import com.sura.domain.MessageVO;
 import com.sura.service.MessageService;
+import lombok.SneakyThrows;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,8 +27,14 @@ public class SChatBotController {
     @Autowired
     private MessageService messageService;
 
+    @SneakyThrows
     @PostMapping(value = "/hello")
-    public MessageVO HelloBot() {
+    public MessageVO HelloBot(@RequestBody Map<String,Object> params) {
+
+        ObjectMapper mapper = new ObjectMapper();
+        String reqJson = mapper.writeValueAsString(params);
+        logger.info(reqJson);
+
         MessageVO message = new MessageVO();
 
         message.setVersion("2.0");
