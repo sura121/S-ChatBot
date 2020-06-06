@@ -22,7 +22,7 @@ public class SChatBotController {
     @GetMapping(value = "/hello")
     public ResponseEntity<?> HelloBot() {
         MessageVO message = new MessageVO();
-        
+
         message.setText("hello");
         return ResponseEntity.ok(message);
     }

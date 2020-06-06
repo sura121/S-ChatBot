@@ -26,10 +26,7 @@ public class NewsController {
         log.getLogger("in controller");
 
         MessageVO message = new MessageVO();
-        message.setCode(200);
-        message.setDesc("asd");
-        message.setId(id);
-        message.setQuantity(10);
+
 
         return ResponseEntity.ok(message);
     }
@@ -39,8 +36,7 @@ public class NewsController {
 
 
         MessageVO message = new MessageVO();
-        message.setCode(200);
-        message.setQuantity(100);
+
         return  ResponseEntity.ok(message);
     }
 
