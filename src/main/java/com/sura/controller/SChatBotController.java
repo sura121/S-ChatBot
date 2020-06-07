@@ -31,15 +31,14 @@ public class SChatBotController {
 
     @SneakyThrows
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
-    public MessageVO HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+    public Map<String,Object> HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+
+        Map<String, Object> resultJson = new HashMap<>();
 
         ObjectMapper mapper = new ObjectMapper();
         String reqJson = mapper.writeValueAsString(params);
         logger.info(reqJson);
 
-        MessageVO message = new MessageVO();
-
-        message.setVersion("2.0");
         List<Map<String,Object>> outputs = new ArrayList<>();
 
         Map<String,Object> simpleText = new HashMap<>();
@@ -51,9 +50,11 @@ public class SChatBotController {
         simpleText.put("simpleText",text);
         outputs.add(simpleText);
         template.put("output",outputs);
-        message.setTemplate(template);
 
-        return message;
+        resultJson.put("version","1.0");
+        resultJson.put("template",template);
+
+        return resultJson;
     }
 
 }
