@@ -24,30 +24,34 @@ public class SChatBotController {
     @Autowired
     private MessageService messageService;
 
-    @SneakyThrows
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
-    public Map<String,Object> HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+    public HashMap<String,Object> HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
 
-        Map<String, Object> resultJson = new HashMap<>();
+        HashMap<String, Object> resultJson = new HashMap<>();
 
-        ObjectMapper mapper = new ObjectMapper();
-        String reqJson = mapper.writeValueAsString(params);
-        logger.info(reqJson);
+        try{
 
-        List<Map<String,Object>> outputs = new ArrayList<>();
+            ObjectMapper mapper = new ObjectMapper();
+            String jsonInString = mapper.writeValueAsString(params);
+            System.out.println(jsonInString);
 
-        Map<String,Object> simpleText = new HashMap<>();
-        Map<String,Object> text = new HashMap<>();
-        Map<String,Object> template = new HashMap<>();
+            List<HashMap<String,Object>> outputs = new ArrayList<>();
+            HashMap<String,Object> template = new HashMap<>();
+            HashMap<String, Object> simpleText = new HashMap<>();
+            HashMap<String, Object> text = new HashMap<>();
 
-        text.put("text","안녕하세요.");
+            text.put("text","코딩32 발화리턴입니다.");
+            simpleText.put("simpleText",text);
+            outputs.add(simpleText);
 
-        simpleText.put("simpleText",text);
-        outputs.add(simpleText);
-        template.put("output",outputs);
+            template.put("outputs",outputs);
 
-        resultJson.put("version","1.0");
-        resultJson.put("template",template);
+            resultJson.put("version","2.0");
+            resultJson.put("template",template);
+
+        }catch (Exception e){
+
+        }
 
         return resultJson;
     }

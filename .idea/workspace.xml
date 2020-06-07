@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/logs/access_log.2020-06-07.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access_log.2020-06-07.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -111,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="132">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,8 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>web</find>
-      <find>WEB</find>
       <find>spring-boot</find>
       <find>logger</find>
       <find>Exception</find>
@@ -164,6 +163,8 @@
       <find>configura</find>
       <find>maven-plugin</find>
       <find>jackson</find>
+      <find>sun.depl</find>
+      <find>Map</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -483,7 +484,7 @@
       <workItem from="1589690419517" duration="7951000" />
       <workItem from="1589699295880" duration="826000" />
       <workItem from="1589767941533" duration="28526000" />
-      <workItem from="1591417404465" duration="15215000" />
+      <workItem from="1591417404465" duration="16256000" />
     </task>
     <servers />
   </component>
@@ -520,7 +521,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68561000" />
+    <option name="totallyTimeSpent" value="69602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,7 +577,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/target/surefire-reports/com.sura.controller.NewsControllerTest.txt" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.chatbot.ApplicationTest.xml" />
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.controller.NewsControllerTest.xml" />
     <entry file="file://$PROJECT_DIR$/Chatbot.iml">
@@ -871,10 +871,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.13/tomcat-embed-core-9.0.13.jar!/javax/servlet/http/HttpServletRequest.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="61" lean-forward="true" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        <state relative-caret-position="132">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
