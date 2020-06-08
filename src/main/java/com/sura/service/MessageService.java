@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class MessageService {
 
-    private MessageVO message(String msg) {
+    private MessageVO message() {
 
         return new MessageVO();
     }

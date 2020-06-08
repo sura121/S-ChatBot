@@ -1,0 +1,10 @@
+2020-06-08 14:58:04	404	GET / HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	306   
+2020-06-08 14:58:12	200	GET /chat/test HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-08 15:00:03	200	GET /chat/test HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-08 15:00:04	200	GET /favicon.ico HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	http://localhost:8080/chat/test	0:0:0:0:0:0:0:1	946   
+2020-06-08 15:10:08	200	GET /chat/test HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-08 15:10:08	200	GET /favicon.ico HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	http://localhost:8080/chat/test	0:0:0:0:0:0:0:1	946   
+2020-06-08 16:25:28	500	GET /chat/test HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	318   
+2020-06-08 16:25:28	200	GET /favicon.ico HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	http://localhost:8080/chat/test	0:0:0:0:0:0:0:1	946   
+2020-06-08 16:27:19	500	GET /chat/test HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	-	0:0:0:0:0:0:0:1	318   
+2020-06-08 16:27:19	200	GET /favicon.ico HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36	http://localhost:8080/chat/test	0:0:0:0:0:0:0:1	946   
