@@ -1,27 +1,30 @@
 package com.sura.controller;
 
+
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.sun.xml.internal.bind.v2.runtime.Coordinator;
-import com.sura.domain.MessageVO;
-import com.sura.global.RestTemplateConfig;
+import com.google.gson.JsonObject;
+import com.sura.global.JsonParse;
 import com.sura.resource.ApiKeys;
 import com.sura.service.MessageService;
-import org.jasypt.encryption.pbe.StandardPBEByteEncryptor;
+
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
-import sun.security.provider.MD5;
+
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/chat")
@@ -34,6 +37,8 @@ public class SChatBotController {
 
     @Autowired
     private RestTemplate googleApiRes;
+
+    private final static String G_END_POINT = "https://maps.googleapis.com/maps/api/geocode/json";
 
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
     public HashMap<String,Object> HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
@@ -67,28 +72,4 @@ public class SChatBotController {
         return resultJson;
     }
 
-
-    @GetMapping(value = "/test")
-    public void staticTest()
-    {
-
-        StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
-        encryptor.setPassword("11");
-        encryptor.setAlgorithm("PBEwithMD5AndDES");
-
-        String ss = encryptor.encrypt("AIzaSyAbNtPA_7G2sAN3O_ABAnLRCPAgOZyC9Ak");
-
-        logger.info(ss);
-
-
-//        Map<String,String> queryString = new HashMap<>();
-//
-//        queryString.put("key",ApiKeys.googleApiKey);
-//        queryString.put("address","서울");
-//
-//        ResponseEntity<String> res = googleApiRes.postForEntity("", "",String.class,queryString);
-//        res.getBody();
-//        logger.info(res.toString());
-
-    }
 }
