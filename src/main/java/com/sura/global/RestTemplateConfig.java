@@ -1,34 +1,32 @@
 package com.sura.global;
 
-import com.sura.resource.ApiKeys;
-import lombok.RequiredArgsConstructor;
-import org.springframework.boot.web.client.RestTemplateBuilder;
+import org.apache.http.client.HttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.web.client.RestTemplate;
 
-import java.time.Duration;
-
 @Configuration
-@RequiredArgsConstructor
 public class RestTemplateConfig {
 
-    private final RestTemplateBuilder restTemplateBuilder;
-
-    private static final String GOOGLE_API_KEY = ApiKeys.googleApiKey;
-    private static final String WEATHER_API_KEY = ApiKeys.weatherApiKey;
-
-    private static final String GOOGLE_API_ENDPOINT = "https://maps.googleapis.com/maps/api/geocode/json";
-
     @Bean
-    public RestTemplate GoogleApiRes() {
+    public RestTemplate restTemplate() {
 
-        return restTemplateBuilder.rootUri(GOOGLE_API_ENDPOINT)
-                .additionalInterceptors(new RestTemplateClientHttpRequestInterceptor())
-                .errorHandler(new RestTemplateErrorHandler())
-                .setConnectTimeout(Duration.ofMinutes(3))
+        HttpComponentsClientHttpRequestFactory factory = new HttpComponentsClientHttpRequestFactory();
+
+        HttpClient client = HttpClientBuilder.create()
+                .setMaxConnTotal(50)
+                .setMaxConnPerRoute(20)
                 .build();
 
+        factory.setHttpClient(client);
+        factory.setConnectTimeout(3000);
+        factory.setReadTimeout(50000);
+
+        return  new RestTemplate(factory);
     }
+
+
 
 }

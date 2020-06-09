@@ -6,12 +6,15 @@ import com.sura.domain.MessageVO;
 import com.sura.global.RestTemplateConfig;
 import com.sura.resource.ApiKeys;
 import com.sura.service.MessageService;
+import org.jasypt.encryption.pbe.StandardPBEByteEncryptor;
+import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
+import sun.security.provider.MD5;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,8 +32,8 @@ public class SChatBotController {
     @Autowired
     private MessageService messageService;
 
-
-    private RestTemplate GoogleApiRes;
+    @Autowired
+    private RestTemplate googleApiRes;
 
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
     public HashMap<String,Object> HelloBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
@@ -68,14 +71,24 @@ public class SChatBotController {
     @GetMapping(value = "/test")
     public void staticTest()
     {
-        Map<String,String> queryString = new HashMap<>();
 
-        queryString.put("key",ApiKeys.googleApiKey);
-        queryString.put("address","서울");
+        StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
+        encryptor.setPassword("11");
+        encryptor.setAlgorithm("PBEwithMD5AndDES");
 
-        ResponseEntity<String> res = GoogleApiRes.getForEntity("", String.class,queryString);
-        res.getBody();
-        logger.info(res.toString());
+        String ss = encryptor.encrypt("AIzaSyAbNtPA_7G2sAN3O_ABAnLRCPAgOZyC9Ak");
+
+        logger.info(ss);
+
+
+//        Map<String,String> queryString = new HashMap<>();
+//
+//        queryString.put("key",ApiKeys.googleApiKey);
+//        queryString.put("address","서울");
+//
+//        ResponseEntity<String> res = googleApiRes.postForEntity("", "",String.class,queryString);
+//        res.getBody();
+//        logger.info(res.toString());
 
     }
 }

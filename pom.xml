@@ -77,9 +77,18 @@
             <artifactId>mariadb-java-client</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.jasypt</groupId>
+            <artifactId>jasypt</artifactId>
+            <version>1.9.2</version>
+        </dependency>
 
-
-
+        <!-- https://mvnrepository.com/artifact/com.wudaosoft/httpclient-spring-boot-starter -->
+        <dependency>
+            <groupId>com.wudaosoft</groupId>
+            <artifactId>httpclient-spring-boot-starter</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
     </dependencies>
 
@@ -176,13 +185,6 @@
                     <to>
                         <image>myimage</image>
                     </to>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <configuration>
-                    <mainClass>com.sura.SpringBootApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>
