@@ -49,7 +49,11 @@ public class SChatBotController {
 
             ObjectMapper mapper = new ObjectMapper();
             String jsonInString = mapper.writeValueAsString(params);
-            System.out.println(jsonInString);
+            JsonParse jsonParse = new JsonParse();
+
+            HashMap<String, Object> requestWord = jsonParse.parseResponse("userRequest",jsonInString);
+
+            logger.info(requestWord.toString());
 
             List<HashMap<String,Object>> outputs = new ArrayList<>();
             HashMap<String,Object> template = new HashMap<>();
