@@ -1,9 +1,0 @@
-com/sura/domain/LogVO.class
-com/sura/domain/MessageVO.class
-com/sura/SpringBootApplication.class
-com/sura/service/BoardService.class
-com/sura/controller/NewsController.class
-com/sura/repository/BoardRepository.class
-com/sura/controller/BoardController.class
-com/sura/domain/BoardVO.class
-com/sura/service/LogService.class

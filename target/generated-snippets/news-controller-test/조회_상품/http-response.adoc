@@ -1,15 +1,11 @@
 [source,http,options="nowrap"]
 ----
 HTTP/1.1 200 OK
-Content-Length: 104
+Content-Length: 39
 Content-Type: application/json;charset=UTF-8
 
 {
-  "message" : null,
-  "id" : 1,
-  "name" : null,
-  "desc" : "asd",
-  "quantity" : 10,
-  "code" : 200
+  "code" : 200,
+  "template" : null
 }
 ----

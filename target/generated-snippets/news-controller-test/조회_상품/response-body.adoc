@@ -1,11 +1,7 @@
 [source,options="nowrap"]
 ----
 {
-  "message" : null,
-  "id" : 1,
-  "name" : null,
-  "desc" : "asd",
-  "quantity" : 10,
-  "code" : 200
+  "code" : 200,
+  "template" : null
 }
 ----
