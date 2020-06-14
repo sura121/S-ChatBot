@@ -61,7 +61,7 @@ public class SChatBotController {
 
             logger.info(temp.toString());
 
-            String weatherText = String.format("현재 온도 : %s \n 최고 온도 : %s ",
+            String weatherText = String.format("현재 온도 : %s \n최고 온도 : %s ",
                     temp.get("temp"), temp.get("temp_max"));
 
             logger.info(weatherText);
