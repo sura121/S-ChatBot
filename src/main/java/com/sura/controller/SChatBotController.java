@@ -2,7 +2,9 @@ package com.sura.controller;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.sura.domain.TemperatureVO;
 import com.sura.global.ApiCall;
+import com.sura.global.CalcTemp;
 import com.sura.global.JsonParse;
 import com.sura.resource.ConfigResource;
 import com.sura.service.MessageService;
@@ -31,6 +33,9 @@ public class SChatBotController {
     @Autowired
     private RestTemplate googleApiRes;
 
+    @Autowired
+    private CalcTemp calcTemp;
+
     private final static String G_END_POINT = "https://maps.googleapis.com/maps/api/geocode/json";
 
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
@@ -52,21 +57,29 @@ public class SChatBotController {
 
             Map weatherInfo = apiCall.temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
 
-            logger.info(weatherInfo.toString());
-//
-//            List<HashMap<String,Object>> outputs = new ArrayList<>();
-//            HashMap<String,Object> template = new HashMap<>();
-//            HashMap<String, Object> simpleText = new HashMap<>();
-//            HashMap<String, Object> text = new HashMap<>();
-//
-//            text.put("text","코딩32 발화리턴입니다.");
-//            simpleText.put("simpleText",text);
-//            outputs.add(simpleText);
-//
-//            template.put("outputs",outputs);
-//
-//            resultJson.put("version","2.0");
-//            resultJson.put("template",template);
+            HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
+
+            logger.info(temp.toString());
+
+            String weatherText = String.format("현재 온도 : %s \n 최고 온도 : %s ",
+                    temp.get("temp"), temp.get("temp_max"));
+
+            logger.info(weatherText);
+
+
+            List<HashMap<String,Object>> outputs = new ArrayList<>();
+            HashMap<String,Object> template = new HashMap<>();
+            HashMap<String, Object> simpleText = new HashMap<>();
+            HashMap<String, Object> text = new HashMap<>();
+
+            text.put("text",weatherText);
+            simpleText.put("simpleText",text);
+            outputs.add(simpleText);
+
+            template.put("outputs",outputs);
+
+            resultJson.put("version","2.0");
+            resultJson.put("template",template);
 
         }catch (Exception e){
             e.getStackTrace();

@@ -68,10 +68,11 @@ public class ApiCall {
         queryString.put("key",ConfigResource.WEATHER_API_KEY.getApiKey());
         queryString.put("lon",lng);
         queryString.put("lat",lat);
+        queryString.put("units","metric");
 
         logger.info(queryString.toString());
 
-        ResponseEntity<String> res = googleApiRes.getForEntity(W_END_POINT+"?lon={lon}&lat={lat}&appid={key}",String.class,queryString);
+        ResponseEntity<String> res = googleApiRes.getForEntity(W_END_POINT+"?lon={lon}&lat={lat}&appid={key}&units={units}",String.class,queryString);
         logger.info(res.toString());
         String jsonString = res.getBody();
 
