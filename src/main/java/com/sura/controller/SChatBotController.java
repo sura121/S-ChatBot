@@ -85,14 +85,18 @@ public class SChatBotController {
             HashMap<String, Object> text = new HashMap<>();
             HashMap<String, Object> simpleImage = new HashMap<>();
             HashMap<String, Object> imageUrl = new HashMap<>();
+            HashMap<String, Object> basicCard = new HashMap<>();
 
-            text.put("text",weatherText);
-            simpleText.put("simpleText",text);
+            basicCard.put("title","날씨정보입니다.");
+            basicCard.put("description",weatherText);
+
+//            text.put("text",weatherText);
+//            simpleText.put("simpleText",text);
             imageUrl.put("imageUrl",weatherImage);
-            simpleImage.put("simpleImage",imageUrl);
+            basicCard.put("thumnail",imageUrl);
 
-            outputs.add(simpleText);
-            outputs.add(simpleImage);
+            outputs.add(basicCard);
+//            outputs.add(simpleImage);
 
             template.put("outputs",outputs);
 
