@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/access_log.2020-06-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access_log.2020-06-15.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="280">
+              <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -605,7 +604,7 @@
       <workItem from="1589767941533" duration="28526000" />
       <workItem from="1591417404465" duration="51650000" />
       <workItem from="1591857816199" duration="5051000" />
-      <workItem from="1591864482088" duration="8882000" />
+      <workItem from="1591864482088" duration="9255000" />
     </task>
     <servers />
   </component>
@@ -642,7 +641,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118929000" />
+    <option name="totallyTimeSpent" value="119302000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1092,8 +1091,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+        <state relative-caret-position="280">
+          <caret line="97" column="33" lean-forward="true" selection-start-line="97" selection-start-column="33" selection-end-line="97" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -82,7 +82,7 @@ public class SChatBotController {
             List<HashMap<String,Object>> outputs = new ArrayList<>();
             HashMap<String,Object> template = new HashMap<>();
             HashMap<String, Object> simpleText = new HashMap<>();
-            HashMap<String, Object> text = new HashMap<>();
+            HashMap<String, Object> context = new HashMap<>();
             HashMap<String, Object> simpleImage = new HashMap<>();
             HashMap<String, Object> imageUrl = new HashMap<>();
             HashMap<String, Object> basicCard = new HashMap<>();
@@ -94,8 +94,8 @@ public class SChatBotController {
 //            simpleText.put("simpleText",text);
             imageUrl.put("imageUrl",weatherImage);
             basicCard.put("thumnail",imageUrl);
-
-            outputs.add(basicCard);
+            context.put("basicCard",basicCard);
+            outputs.add(context);
 //            outputs.add(simpleImage);
 
             template.put("outputs",outputs);
