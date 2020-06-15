@@ -69,13 +69,15 @@ public class ApiCall {
         queryString.put("lon",lng);
         queryString.put("lat",lat);
         queryString.put("units","metric");
+        queryString.put("lang","kr");
 
         logger.info(queryString.toString());
 
-        ResponseEntity<String> res = googleApiRes.getForEntity(W_END_POINT+"?lon={lon}&lat={lat}&appid={key}&units={units}",String.class,queryString);
+        ResponseEntity<String> res = googleApiRes.getForEntity(W_END_POINT+"?lon={lon}&lat={lat}&appid={key}&units={units}&lang={lang}",String.class,queryString);
         logger.info(res.toString());
-        String jsonString = res.getBody();
 
+        String jsonString = res.getBody();
+        logger.info("response : " + jsonString);
         JsonParse parser = new JsonParse();
 
         HashMap weather = parser.parseResponse("weather",jsonString);

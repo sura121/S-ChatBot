@@ -67,11 +67,12 @@ public class SChatBotController {
                 Map weatherInfo = apiCall.temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
 
                 HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
+                HashMap<String, String> mainWeather= (HashMap<String,String>)weatherInfo.get("weather");
 
                 logger.info(temp.toString());
 
-                weatherText = String.format("현재 온도 : %s \n최고 온도 : %s ",
-                        temp.get("temp"), temp.get("temp_max"));
+                weatherText = String.format("현재 날씨 : %s \tU+2600 \n현재 온도 : %s \n최고 온도 : %s ",
+                        mainWeather.get("description"),temp.get("temp"), temp.get("temp_max"));
 
                 logger.info(weatherText);
 
