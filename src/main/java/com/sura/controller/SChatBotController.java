@@ -52,12 +52,14 @@ public class SChatBotController {
 
             Map requestWord = jsonParse.parseResponse("userRequest",jsonInString);
             String weatherText;
+            String weatherImage;
             String city = requestWord.get("utterance").toString();
 
             Cities cityConfirm = Cities.findByCity(city);
 
             if(cityConfirm == null) {
                 weatherText = "검색 불가능한 도시 입니다.";
+                weatherImage="";
             } else {
 
                 JSONObject coordinate = apiCall.apiCall(city);
@@ -73,16 +75,22 @@ public class SChatBotController {
 
                 logger.info(weatherText);
 
+                weatherImage ="https://post-phinf.pstatic.net/MjAxNzA3MjVfMSAg/MDAxNTAwOTY2NTAwOTQz.BVp-6W0YgOG9hEUSRaORj5diLQUItrXKYTuEsTrAJFwg.zUGDnU9F1qPyOVJDIk4Gux8zDL4r1OCYnMZHXnt3yS4g.PNG/image.png?type=w1200";
+
             }
 
             List<HashMap<String,Object>> outputs = new ArrayList<>();
             HashMap<String,Object> template = new HashMap<>();
             HashMap<String, Object> simpleText = new HashMap<>();
             HashMap<String, Object> text = new HashMap<>();
+            HashMap<String, Object> simpleImage = new HashMap<>();
 
             text.put("text",weatherText);
             simpleText.put("simpleText",text);
+            simpleImage.put("simpleImage",weatherImage);
+
             outputs.add(simpleText);
+            outputs.add(simpleImage);
 
             template.put("outputs",outputs);
 
