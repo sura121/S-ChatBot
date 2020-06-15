@@ -84,10 +84,12 @@ public class SChatBotController {
             HashMap<String, Object> simpleText = new HashMap<>();
             HashMap<String, Object> text = new HashMap<>();
             HashMap<String, Object> simpleImage = new HashMap<>();
+            HashMap<String, Object> imageUrl = new HashMap<>();
 
             text.put("text",weatherText);
             simpleText.put("simpleText",text);
-            simpleImage.put("simpleImage",weatherImage);
+            imageUrl.put("imageUrl",weatherImage);
+            simpleImage.put("simpleImage",imageUrl);
 
             outputs.add(simpleText);
             outputs.add(simpleImage);
