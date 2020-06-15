@@ -6,6 +6,7 @@ import com.sura.domain.TemperatureVO;
 import com.sura.global.ApiCall;
 import com.sura.global.CalcTemp;
 import com.sura.global.JsonParse;
+import com.sura.resource.Cities;
 import com.sura.resource.ConfigResource;
 import com.sura.service.MessageService;
 
@@ -50,22 +51,29 @@ public class SChatBotController {
             JsonParse jsonParse = new JsonParse();
 
             Map requestWord = jsonParse.parseResponse("userRequest",jsonInString);
-
+            String weatherText;
             String city = requestWord.get("utterance").toString();
 
-            JSONObject coordinate = apiCall.apiCall(city);
+            Cities cityConfirm = Cities.findByCity(city);
 
-            Map weatherInfo = apiCall.temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
+            if(cityConfirm == null) {
+                weatherText = "검색 불가능한 도시 입니다.";
+            } else {
 
-            HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
+                JSONObject coordinate = apiCall.apiCall(city);
 
-            logger.info(temp.toString());
+                Map weatherInfo = apiCall.temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
 
-            String weatherText = String.format("현재 온도 : %s \n최고 온도 : %s ",
-                    temp.get("temp"), temp.get("temp_max"));
+                HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
 
-            logger.info(weatherText);
+                logger.info(temp.toString());
 
+                weatherText = String.format("현재 온도 : %s \n최고 온도 : %s ",
+                        temp.get("temp"), temp.get("temp_max"));
+
+                logger.info(weatherText);
+
+            }
 
             List<HashMap<String,Object>> outputs = new ArrayList<>();
             HashMap<String,Object> template = new HashMap<>();

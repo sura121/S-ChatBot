@@ -1,0 +1,6 @@
+2020-06-15 12:17:11	200	GET /news/enumtest HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-15 12:37:52	200	GET /news/enumtest HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-15 12:38:46	200	GET /news/enumtest/%EC%84%9C HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-15 12:38:53	200	GET /news/enumtest/%EC%84%9C HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-15 12:38:59	200	GET /news/enumtest/%EB%B6%80 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
+2020-06-15 12:39:05	200	GET /news/enumtest/%EB%89%B4 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	-   
