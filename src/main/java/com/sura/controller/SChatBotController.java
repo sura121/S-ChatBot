@@ -93,7 +93,7 @@ public class SChatBotController {
 //            text.put("text",weatherText);
 //            simpleText.put("simpleText",text);
             imageUrl.put("imageUrl",weatherImage);
-            basicCard.put("thumnail",imageUrl);
+            basicCard.put("thumbnail",imageUrl);
             context.put("basicCard",basicCard);
             outputs.add(context);
 //            outputs.add(simpleImage);
