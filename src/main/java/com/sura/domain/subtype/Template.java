@@ -14,18 +14,18 @@ import java.util.List;
 @Builder
 public class Template {
 
-    private List<Component> output;
+    private List<Component> outputs;
 
     public Template() {
-        this.output = new ArrayList<>();
+        this.outputs = new ArrayList<>();
     }
 
     public Template(List<Component> ou) {
-        this.output = ou;
+        this.outputs = ou;
     }
 
     public void addOutput(Component ou) {
-        this.output.add(ou);
+        this.outputs.add(ou);
     }
 
 

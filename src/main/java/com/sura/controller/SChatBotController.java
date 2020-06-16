@@ -124,7 +124,7 @@ public class SChatBotController {
         }catch (Exception e){
             e.getStackTrace();
         }
-        
+
         return ResponseEntity.ok(vo);
     }
 
