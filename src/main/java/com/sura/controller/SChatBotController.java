@@ -17,6 +17,7 @@ import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
@@ -43,7 +44,7 @@ public class SChatBotController {
      * @return
      */
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
-    public ResponseVO WeatherBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+    public ResponseEntity<?> WeatherBot(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
 
         HashMap<String, Object> resultJson = new HashMap<>();
 
@@ -123,8 +124,8 @@ public class SChatBotController {
         }catch (Exception e){
             e.getStackTrace();
         }
-        logger.info(vo.toString());
-        return vo;
+        
+        return ResponseEntity.ok(vo);
     }
 
 }
