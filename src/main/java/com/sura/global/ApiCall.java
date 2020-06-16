@@ -144,7 +144,7 @@ public class ApiCall {
         logger.info(basicCard.toString());
 
         Template template = Template.builder()
-                .output(Collections.singletonList(basicCardView))
+                .outputs(Collections.singletonList(basicCardView))
                 .build();
 
         vo.setTemplate(template);

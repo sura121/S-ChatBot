@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="97" column="21" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="21" />
+            <state relative-caret-position="342">
+              <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -249,10 +249,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/variable/Component.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/ResponseVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
       </list>
     </option>
   </component>
@@ -620,7 +620,7 @@
       <workItem from="1589767941533" duration="28526000" />
       <workItem from="1591417404465" duration="51650000" />
       <workItem from="1591857816199" duration="5051000" />
-      <workItem from="1591864482088" duration="26807000" />
+      <workItem from="1591864482088" duration="26875000" />
     </task>
     <servers />
   </component>
@@ -657,7 +657,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136854000" />
+    <option name="totallyTimeSpent" value="136922000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1082,16 +1082,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="97" column="21" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/NewsController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1134,6 +1124,16 @@
             <element signature="e#519#520#0" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#575#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="146" column="25" selection-start-line="146" selection-start-column="25" selection-end-line="146" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
