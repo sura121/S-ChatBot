@@ -1,6 +1,7 @@
 package com.sura.global;
 
 import com.sura.domain.ResponseVO;
+import com.sura.domain.component.BasicCardView;
 import com.sura.domain.subtype.BasicCard;
 import com.sura.domain.subtype.Template;
 import com.sura.resource.Cities;
@@ -135,11 +136,15 @@ public class ApiCall {
                 .title("날씨 정보 입니다.")
                 .build();
 
+        BasicCardView basicCardView = BasicCardView.builder()
+                .basicCard(basicCard)
+                .build();
+
 
         logger.info(basicCard.toString());
 
         Template template = Template.builder()
-                .output(Collections.singletonList(basicCard))
+                .output(Collections.singletonList(basicCardView))
                 .build();
 
         vo.setTemplate(template);

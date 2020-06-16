@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/logs/access_log.2020-06-15.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access_log.2020-06-15.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/access_log.2020-06-16.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/access_log.2020-06-16.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/global/ApiCall.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,7 +24,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="908">
               <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -39,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="141" column="61" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="61" />
+            <state relative-caret-position="357">
+              <caret line="147" column="25" lean-forward="true" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,7 +45,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
@@ -57,10 +54,10 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
                 <element signature="e#423#424#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
-                <element signature="e#352#353#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
+                <element signature="e#472#473#0" expanded="true" />
+                <element signature="e#519#520#0" expanded="true" />
+                <element signature="e#540#541#0" expanded="true" />
+                <element signature="e#575#576#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,6 +108,18 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,18 +144,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/NewsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -155,14 +152,13 @@
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jpa</find>
       <find>mybatis-spring-boot-starter</find>
       <find>mysql</find>
       <find>Optional</find>
@@ -192,6 +188,7 @@
       <find>logger</find>
       <find>googleApiRes</find>
       <find>vo</find>
+      <find>BasicCard</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -203,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/sura/chatbot/ApplicationTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sura/test/NewsControllerTest.java" />
         <option value="$PROJECT_DIR$/target/classes/application.property" />
         <option value="$PROJECT_DIR$/src/main/java/Application.java" />
@@ -252,8 +248,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/ResponseVO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java" />
       </list>
     </option>
   </component>
@@ -354,6 +351,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sura" type="462c0819:PsiDirectoryNode" />
               <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sura" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
@@ -611,7 +618,7 @@
       <workItem from="1589767941533" duration="28526000" />
       <workItem from="1591417404465" duration="51650000" />
       <workItem from="1591857816199" duration="5051000" />
-      <workItem from="1591864482088" duration="24865000" />
+      <workItem from="1591864482088" duration="26359000" />
     </task>
     <servers />
   </component>
@@ -648,7 +655,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134912000" />
+    <option name="totallyTimeSpent" value="136406000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -704,13 +711,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/5.1.3.RELEASE/spring-test-5.1.3.RELEASE.jar!/org/springframework/test/context/junit4/SpringRunner.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-commons/2.2.3.RELEASE/spring-data-commons-2.2.3.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1061,30 +1061,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/variable/Component.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1100,10 +1080,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="141" column="61" selection-start-line="141" selection-start-column="61" selection-end-line="141" selection-end-column="61" />
+        <state relative-caret-position="150">
+          <caret line="10" column="8" lean-forward="true" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="908">
+          <caret line="124" column="9" lean-forward="true" selection-start-line="124" selection-start-column="9" selection-end-line="124" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1118,10 +1108,30 @@
             <element signature="imports" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
             <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-            <element signature="e#352#353#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
+            <element signature="e#472#473#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#540#541#0" expanded="true" />
+            <element signature="e#575#576#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="147" column="25" lean-forward="true" selection-start-line="147" selection-start-column="25" selection-end-line="147" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
