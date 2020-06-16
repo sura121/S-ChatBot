@@ -12,3 +12,8 @@
 2020-06-15 15:51:40	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	12   
 2020-06-15 15:53:54	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	399   
 2020-06-15 16:00:01	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	408   
+2020-06-15 16:40:00	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	12   
+2020-06-15 16:41:02	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	12   
+2020-06-15 16:42:29	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	419   
+2020-06-15 16:45:47	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	419   
+2020-06-15 17:18:06	200	POST /chat/kkoChat/v1 HTTP/1.1	Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36	-	0:0:0:0:0:0:0:1	419   
