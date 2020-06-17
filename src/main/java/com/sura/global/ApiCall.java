@@ -95,59 +95,69 @@ public class ApiCall {
         return result;
     }
 
-    public ResponseVO reponseApiCall(String city) {
+    public ResponseVO reponseApiCall(String city) throws Exception{
 
         ResponseVO vo = new ResponseVO("2.0");
 
         Cities cityConfirm = Cities.findByCity(city);
 
-        if(cityConfirm == null ) {
+        try {
 
-            weatherText = "검색 불가능한 도시 입니다.";
-            weatherImage="";
+            if(cityConfirm == null ) {
 
-        } else {
+                weatherText = "검색 불가능한 도시 입니다.";
+                weatherImage="";
 
-            JSONObject coordinate = apiCall(city);
+            } else {
 
-            Map weatherInfo = temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
+                JSONObject coordinate = apiCall(city);
 
-            HashMap<String, Double> temp= (HashMap<String,Double>)weatherInfo.get("temp");
-            HashMap<String, String> mainWeather= (HashMap<String,String>)weatherInfo.get("weather");
+                Map weatherInfo = temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
 
+                HashMap<String, Object> temp= (HashMap<String,Object>)weatherInfo.get("temp");
+                HashMap<String, String> mainWeather= (HashMap<String,String>)weatherInfo.get("weather");
 
-            String imgInfo = ImageUrl.findByGetEmoji(mainWeather.get("description"));
+                Object temperature = temp.get("temp");
+                String imgInfo = ImageUrl.findByGetEmoji(mainWeather.get("description"));
+                Double templ = Double.parseDouble(String.valueOf(temperature));
+                weatherText = String.format("현재 날씨 : %s %s  \n현재 온도 : %s \n최고 온도 : %s ",
+                        mainWeather.get("description"),imgInfo,temp.get("temp"), temp.get("temp_max"));
 
-            weatherText = String.format("현재 날씨 : %s %s  \n현재 온도 : %s \n최고 온도 : %s ",
-                    mainWeather.get("description"),imgInfo,temp.get("temp"), temp.get("temp_max"));
-            logger.info(weatherText);
-            String imgUrl = ImageUrl.findByTempImg(temp.get("temp"));
+                String imgUrl = ImageUrl.findByTempImg(templ);
 
-            weatherImage =imgUrl;
+                weatherImage =imgUrl;
 
+            }
+
+            HashMap<String, Object> imageUrl = new HashMap<>();
+
+            imageUrl.put("imageUrl",weatherImage);
+
+            BasicCard basicCard = BasicCard.builder()
+                    .thumbnail(imageUrl)
+                    .description(weatherText)
+                    .title("날씨 정보 입니다.")
+                    .build();
+
+            BasicCardView basicCardView = BasicCardView.builder()
+                    .basicCard(basicCard)
+                    .build();
+
+            Template template = Template.builder()
+                    .outputs(Collections.singletonList(basicCardView))
+                    .build();
+
+            vo.setTemplate(template);
+
+            logger.info(vo.toString());
+
+        } catch (Exception e) {
+
+            logger.info(e.getMessage());
+            e.getStackTrace();
         }
 
-        HashMap<String, Object> imageUrl = new HashMap<>();
 
-        imageUrl.put("imageUrl",weatherImage);
-
-        BasicCard basicCard = BasicCard.builder()
-                .thumbnail(imageUrl)
-                .description(weatherText)
-                .title("날씨 정보 입니다.")
-                .build();
-
-        BasicCardView basicCardView = BasicCardView.builder()
-                .basicCard(basicCard)
-                .build();
-
-        Template template = Template.builder()
-                .outputs(Collections.singletonList(basicCardView))
-                .build();
-
-        vo.setTemplate(template);
-
-        logger.info(vo.toString());
         return vo;
     }
 

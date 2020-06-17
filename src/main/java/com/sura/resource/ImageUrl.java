@@ -3,7 +3,7 @@ package com.sura.resource;
 public enum ImageUrl {
 
     SOHOT_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
-    HOT_IMAGE("https://www.google.com/url?sa=i&url=http%3A%2F%2Fm.blog.naver.com%2Fjyjahng98%2F10139698717&psig=AOvVaw2ZWu7ekcytdQjwTTrn1Yyt&ust=1592445730811000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNC8nu7gh-oCFQAAAAAdAAAAABAJ","\uD83C\uDF1E "),
+    HOT_IMAGE("https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.hyonews.com%2Fxe%2F72556&psig=AOvVaw163gj31uoUK_WQ-ic1MgUd&ust=1592459601895000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjsw7mUiOoCFQAAAAAdAAAAABAR","\uD83C\uDF1E "),
     SOSO_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     COLD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     RAIN_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
@@ -58,6 +58,8 @@ public enum ImageUrl {
     }
 
     public static String findByTempImg(Double temp) {
+
+        System.out.println(temp);
         String imageUrl = null;
 
         if(temp < 0 ) {
