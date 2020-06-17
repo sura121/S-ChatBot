@@ -11,7 +11,7 @@ import java.util.stream.IntStream;
 public enum WeatherCondition {
 
 
-    WEATHER_CONDITIONS(Arrays.asList("흐림","비","추움","더움"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT"));
+    WEATHER_CONDITIONS(Arrays.asList("구름","비","추움","맑은"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT"));
 
     private List<String> weatherInfo;
     private List<String> weatherKey;
