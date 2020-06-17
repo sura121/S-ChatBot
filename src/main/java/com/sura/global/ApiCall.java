@@ -112,15 +112,15 @@ public class ApiCall {
 
             Map weatherInfo = temperatureApi(coordinate.get("lat").toString(),coordinate.get("lng").toString());
 
-            HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
+            HashMap<String, Double> temp= (HashMap<String,Double>)weatherInfo.get("temp");
             HashMap<String, String> mainWeather= (HashMap<String,String>)weatherInfo.get("weather");
+
 
             String imgInfo = ImageUrl.findByGetEmoji(mainWeather.get("description"));
 
-
             weatherText = String.format("현재 날씨 : %s %s  \n현재 온도 : %s \n최고 온도 : %s ",
                     mainWeather.get("description"),imgInfo,temp.get("temp"), temp.get("temp_max"));
-
+            logger.info(weatherText);
             String imgUrl = ImageUrl.findByTempImg(temp.get("temp"));
 
             weatherImage =imgUrl;

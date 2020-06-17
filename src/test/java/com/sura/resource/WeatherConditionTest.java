@@ -10,7 +10,7 @@ public class WeatherConditionTest {
     public void getKeyIndex() throws Exception{
 
         WeatherCondition weather = WeatherCondition.WEATHER_CONDITIONS;
-       String s=  weather.getKeyIndex("온흐림");
+       String s=  weather.getKeyIndex("튼구름");
 
 
 

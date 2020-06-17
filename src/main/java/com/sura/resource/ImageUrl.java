@@ -13,7 +13,7 @@ public enum ImageUrl {
     SOSO_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     COLD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     RAIN_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
-    CLOUD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","☁️");
+    CLOUD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","⛅");
 
 
     private String imageUrl;
@@ -63,19 +63,16 @@ public enum ImageUrl {
         return emoji;
     }
 
-    public static String findByTempImg(String temp) {
-
+    public static String findByTempImg(Double temp) {
         String imageUrl = null;
-        int integerTemp = Integer.parseInt(temp);
 
-
-        if(integerTemp < 0 ) {
+        if(temp < 0 ) {
             imageUrl = COLD_IMAGE.getImageUrl();
-        } else if (0 < integerTemp && 20 > integerTemp){
+        } else if (0 < temp && 20 > temp){
             imageUrl = SOSO_IMAGE.getImageUrl();
-        } else if ( 20 < integerTemp && 30 > integerTemp) {
+        } else if ( 20 < temp && 30 > temp) {
             imageUrl = HOT_IMAGE.getImageUrl();
-        } else if ( 30 < integerTemp && 40 >integerTemp) {
+        } else if ( 30 < temp && 40 >temp) {
             imageUrl = SOHOT_IMAGE.getImageUrl();
         }
 

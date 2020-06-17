@@ -37,7 +37,7 @@ public enum WeatherCondition {
                 .findFirst();
 
         String w = weatherKey.get(idx.getAsInt());
-
+        System.out.println("asdasdasd"+ w);
 
         return  w;
     }
