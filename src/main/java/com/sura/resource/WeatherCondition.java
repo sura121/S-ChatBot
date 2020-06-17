@@ -1,8 +1,5 @@
 package com.sura.resource;
 
-import org.omg.CORBA.UNKNOWN;
-
-import javax.validation.constraints.Null;
 import java.util.Arrays;
 import java.util.List;
 import java.util.OptionalInt;
@@ -11,7 +8,7 @@ import java.util.stream.IntStream;
 public enum WeatherCondition {
 
 
-    WEATHER_CONDITIONS(Arrays.asList("구름","비","추움","맑은"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT"));
+    WEATHER_CONDITIONS(Arrays.asList("구름","비","추움","맑은","흐림"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT","CLOUD"));
 
     private List<String> weatherInfo;
     private List<String> weatherKey;
