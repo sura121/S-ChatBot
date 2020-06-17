@@ -115,14 +115,15 @@ public class ApiCall {
             HashMap<String, String> temp= (HashMap<String,String>)weatherInfo.get("temp");
             HashMap<String, String> mainWeather= (HashMap<String,String>)weatherInfo.get("weather");
 
-            HashMap<String, String> imgInfo = ImageUrl.findByGetEmoji(mainWeather.get("description"));
+            String imgInfo = ImageUrl.findByGetEmoji(mainWeather.get("description"));
 
-            logger.info("image Info select : "+imgInfo.toString());
 
             weatherText = String.format("현재 날씨 : %s %s  \n현재 온도 : %s \n최고 온도 : %s ",
-                    mainWeather.get("description"),imgInfo.get("emoji"),temp.get("temp"), temp.get("temp_max"));
+                    mainWeather.get("description"),imgInfo,temp.get("temp"), temp.get("temp_max"));
 
-            weatherImage ="https://post-phinf.pstatic.net/MjAxNzA3MjVfMSAg/MDAxNTAwOTY2NTAwOTQz.BVp-6W0YgOG9hEUSRaORj5diLQUItrXKYTuEsTrAJFwg.zUGDnU9F1qPyOVJDIk4Gux8zDL4r1OCYnMZHXnt3yS4g.PNG/image.png?type=w1200";
+            String imgUrl = ImageUrl.findByTempImg(temp.get("temp"));
+
+            weatherImage =imgUrl;
 
         }
 
@@ -139,9 +140,6 @@ public class ApiCall {
         BasicCardView basicCardView = BasicCardView.builder()
                 .basicCard(basicCard)
                 .build();
-
-
-        logger.info(basicCard.toString());
 
         Template template = Template.builder()
                 .outputs(Collections.singletonList(basicCardView))

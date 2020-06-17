@@ -1,14 +1,20 @@
 package com.sura.resource;
 
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 public enum ImageUrl {
 
-    HOT_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
+    SOHOT_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
+    HOT_IMAGE("https://www.google.com/url?sa=i&url=http%3A%2F%2Fm.blog.naver.com%2Fjyjahng98%2F10139698717&psig=AOvVaw2ZWu7ekcytdQjwTTrn1Yyt&ust=1592445730811000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNC8nu7gh-oCFQAAAAAdAAAAABAJ","\uD83C\uDF1E "),
     SOSO_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     COLD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     RAIN_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","\uD83C\uDF1E "),
     CLOUD_IMAGE("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRbxqQRk4Y4uk1M7wPBVzwxDkvbxwQDzm8uMsdI-iunpILEr2zG&usqp=CAU","☁️");
+
 
     private String imageUrl;
     private String emoji;
@@ -26,34 +32,54 @@ public enum ImageUrl {
         return imageUrl;
     }
 
-    public static HashMap<String, String> findByGetEmoji(String weather) {
+    public static String findByGetEmoji(String weather) {
 
-        HashMap<String, String> res = new HashMap<>();
+        String emoji = null;
 
-        switch (weather) {
+        WeatherCondition condition = WeatherCondition.WEATHER_CONDITIONS;
 
-            case "흐림" :
-                res.put("emoji",CLOUD_IMAGE.getEmoji());
-                res.put("imageUrl",CLOUD_IMAGE.getImageUrl());
+        String weatherKey = condition.getKeyIndex(weather);
+
+        switch (weatherKey) {
+
+            case "CLOUD" :
+                emoji = CLOUD_IMAGE.getEmoji();
                 break;
 
-            case "비" :
-                res.put("emoji",RAIN_IMAGE.getEmoji());
-                res.put("imageUrl",RAIN_IMAGE.getImageUrl());
+            case "RAIN" :
+                emoji = RAIN_IMAGE.getEmoji();
                 break;
 
-            case "추움" :
-                res.put("emoji",COLD_IMAGE.getEmoji());
-                res.put("imageUrl",COLD_IMAGE.getImageUrl());
+            case "COLD" :
+                emoji = COLD_IMAGE.getEmoji();
                 break;
 
             default:
-                res.put("emoji",HOT_IMAGE.getEmoji());
-                res.put("imageUrl",HOT_IMAGE.getImageUrl());
+                emoji = HOT_IMAGE.getEmoji();
                 break;
 
         }
 
-        return res;
+        return emoji;
     }
+
+    public static String findByTempImg(String temp) {
+
+        String imageUrl = null;
+        int integerTemp = Integer.parseInt(temp);
+
+
+        if(integerTemp < 0 ) {
+            imageUrl = COLD_IMAGE.getImageUrl();
+        } else if (0 < integerTemp && 20 > integerTemp){
+            imageUrl = SOSO_IMAGE.getImageUrl();
+        } else if ( 20 < integerTemp && 30 > integerTemp) {
+            imageUrl = HOT_IMAGE.getImageUrl();
+        } else if ( 30 < integerTemp && 40 >integerTemp) {
+            imageUrl = SOHOT_IMAGE.getImageUrl();
+        }
+
+        return imageUrl;
+    }
+
 }
