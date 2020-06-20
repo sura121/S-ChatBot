@@ -6,7 +6,6 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Map;
 
@@ -19,10 +18,10 @@ public class RequestKeyword {
     @Pointcut("execution(public * com.sura.controller.SChatBotController.*(..))")
     public void getParameter() {}
 
-    @Before(value = "getParameter()")
-    public void parameterRequest() {
+    @Before(value = "getParameter() && args(params,..)")
+    public void parameterRequest(Map<String, Object> params) {
 
-        logger.info("test aop");
+        logger.info(params.toString());
     }
 
 }
