@@ -161,4 +161,13 @@ public class ApiCall {
         return vo;
     }
 
+    public ResponseVO cityList () {
+
+        ResponseVO res = new ResponseVO("2.0");
+
+
+
+        return res;
+    }
+
 }

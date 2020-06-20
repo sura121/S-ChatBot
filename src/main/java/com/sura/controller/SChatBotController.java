@@ -24,6 +24,8 @@ public class SChatBotController {
 
     private final static Logger logger = LoggerFactory.getLogger(SChatBotController.class);
 
+    private final static String DOSI = "도시";
+
     @Autowired
     private ApiCall apiCall;
 
@@ -55,6 +57,16 @@ public class SChatBotController {
         }catch (Exception e){
             e.getStackTrace();
         }
+
+        return ResponseEntity.ok(vo);
+    }
+
+    @RequestMapping(value = "/kkoChat/cities" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
+    public ResponseEntity<?> Cities(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+
+        ResponseVO vo = new ResponseVO("2.0");
+
+        ObjectMapper mapper = new ObjectMapper();
 
         return ResponseEntity.ok(vo);
     }
