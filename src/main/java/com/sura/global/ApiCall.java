@@ -84,6 +84,8 @@ public class ApiCall {
 
         String jsonString = res.getBody();
 
+        logger.info("weather api response : " + jsonString);
+
         JsonParse parser = new JsonParse();
 
         HashMap weather = parser.parseResponse("weather",jsonString);
@@ -146,7 +148,9 @@ public class ApiCall {
             Template template = Template.builder()
                     .outputs(Collections.singletonList(basicCardView))
                     .build();
-
+            logger.info("===================================");
+            logger.info("template : " + template.toString());
+            logger.info("===================================");
             vo.setTemplate(template);
 
             logger.info(vo.toString());

@@ -8,7 +8,7 @@ import java.util.stream.IntStream;
 public enum WeatherCondition {
 
 
-    WEATHER_CONDITIONS(Arrays.asList("구름","비","추움","맑은","흐림"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT","CLOUD"));
+    WEATHER_CONDITIONS(Arrays.asList("구름","비","추움","맑음","흐림"),Arrays.asList("CLOUD", "RAIN", "COLD", "HOT","CLOUD"));
 
     private List<String> weatherInfo;
     private List<String> weatherKey;
