@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
 
 @Aspect
@@ -22,8 +23,8 @@ public class RequestKeyword {
     @Pointcut("execution( * com.sura.controller.SChatBotController.*(..))")
     public void getParameter() {}
 
-    @Before(value = "getParameter() && args(params,..)")
-    public String parameterRequest(Map<String, Object> params) throws Throwable {
+    @Before(value = "getParameter() && args(params,request,..)")
+    public void parameterRequest(Map<String, Object> params, HttpServletRequest request) throws Throwable {
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonInString = mapper.writeValueAsString(params);
@@ -33,9 +34,10 @@ public class RequestKeyword {
 
         String city = requestWord.get("utterance").toString();
 
+        request.setAttribute("city",city);
+
         logger.info("AOP : " + city);
 
-        return  city;
     }
 
 }

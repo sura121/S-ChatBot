@@ -42,16 +42,9 @@ public class SChatBotController {
 
         ResponseVO vo = new ResponseVO("2.0");
 
+        String city = (String) request.getAttribute("city");
+
         try{
-
-            ObjectMapper mapper = new ObjectMapper();
-            String jsonInString = mapper.writeValueAsString(params);
-
-            JsonParse jsonParse = new JsonParse();
-
-            Map requestWord = jsonParse.parseResponse("userRequest",jsonInString);
-
-            String city = requestWord.get("utterance").toString();
 
             vo = apiCall.reponseApiCall(city);
 
