@@ -1,9 +1,7 @@
-package com.sura.interceptor;
+package com.sura.aop;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sura.global.JsonParse;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
@@ -26,17 +24,17 @@ public class RequestKeyword {
     @Before(value = "getParameter() && args(params,request,..)")
     public void parameterRequest(Map<String, Object> params, HttpServletRequest request) throws Throwable {
 
-        ObjectMapper mapper = new ObjectMapper();
-        String jsonInString = mapper.writeValueAsString(params);
-        JsonParse jsonParse = new JsonParse();
+//        ObjectMapper mapper = new ObjectMapper();
+//        String jsonInString = mapper.writeValueAsString(params);
+//        JsonParse jsonParse = new JsonParse();
+//
+//        Map requestWord = jsonParse.parseResponse("userRequest",jsonInString);
+//
+//        String city = requestWord.get("utterance").toString();
+//
+//        request.setAttribute("city",city);
 
-        Map requestWord = jsonParse.parseResponse("userRequest",jsonInString);
-
-        String city = requestWord.get("utterance").toString();
-
-        request.setAttribute("city",city);
-
-        logger.info("AOP : " + city);
+//        logger.info("AOP : " + city);
 
     }
 
