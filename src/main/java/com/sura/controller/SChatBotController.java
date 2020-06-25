@@ -58,18 +58,24 @@ public class SChatBotController {
 
     /**
      * 발화 코드 추가 controller
-     * @param params
      * @param request
      * @param response
      * @return
      */
     @RequestMapping(value = "/kkoChat/cities" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
-    public ResponseEntity<?> Cities(@RequestBody Map<String,Object> params, HttpServletRequest request , HttpServletResponse response) {
+    public ResponseEntity<?> Cities(HttpServletRequest request , HttpServletResponse response) {
 
         ResponseVO vo = new ResponseVO("2.0");
 
-        ObjectMapper mapper = new ObjectMapper();
-        logger.info(params.toString());
+        String word = (String) request.getAttribute("city");
+
+        try {
+
+            apiCall.reponseApiCall(word);
+
+        }catch (Exception e) {
+            e.getStackTrace();
+        }
 
         return ResponseEntity.ok(vo);
     }

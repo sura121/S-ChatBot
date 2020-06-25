@@ -2,7 +2,9 @@ package com.sura.global;
 
 import com.sura.domain.ResponseVO;
 import com.sura.domain.component.BasicCardView;
+import com.sura.domain.component.CitiesView;
 import com.sura.domain.subtype.BasicCard;
+import com.sura.domain.subtype.City;
 import com.sura.domain.subtype.Template;
 import com.sura.resource.Cities;
 import com.sura.resource.ConfigResource;
@@ -107,8 +109,13 @@ public class ApiCall {
 
             if(cityConfirm == null ) {
 
-                weatherText = "검색 불가능한 도시 입니다.";
-                weatherImage="";
+                if(city == "도시") {
+                   vo = this.cityList();
+                } else {
+                    weatherText = "검색 불가능한 도시 입니다.";
+                    weatherImage="";
+                }
+
 
             } else {
 
@@ -129,31 +136,33 @@ public class ApiCall {
 
                 weatherImage =imgUrl;
 
+                HashMap<String, Object> imageUrl = new HashMap<>();
+
+                imageUrl.put("imageUrl",weatherImage);
+
+                BasicCard basicCard = BasicCard.builder()
+                        .thumbnail(imageUrl)
+                        .description(weatherText)
+                        .title("날씨 정보 입니다.")
+                        .build();
+
+                BasicCardView basicCardView = BasicCardView.builder()
+                        .basicCard(basicCard)
+                        .build();
+
+                Template template = Template.builder()
+                        .outputs(Collections.singletonList(basicCardView))
+                        .build();
+                logger.info("===================================");
+                logger.info("template : " + template.toString());
+                logger.info("===================================");
+                vo.setTemplate(template);
+
+                logger.info(vo.toString());
+
             }
 
-            HashMap<String, Object> imageUrl = new HashMap<>();
 
-            imageUrl.put("imageUrl",weatherImage);
-
-            BasicCard basicCard = BasicCard.builder()
-                    .thumbnail(imageUrl)
-                    .description(weatherText)
-                    .title("날씨 정보 입니다.")
-                    .build();
-
-            BasicCardView basicCardView = BasicCardView.builder()
-                    .basicCard(basicCard)
-                    .build();
-
-            Template template = Template.builder()
-                    .outputs(Collections.singletonList(basicCardView))
-                    .build();
-            logger.info("===================================");
-            logger.info("template : " + template.toString());
-            logger.info("===================================");
-            vo.setTemplate(template);
-
-            logger.info(vo.toString());
 
         } catch (Exception e) {
 
@@ -170,6 +179,20 @@ public class ApiCall {
         ResponseVO res = new ResponseVO("2.0");
 
 
+
+        City city = City.builder()
+                .cityName("서울")
+                .build();
+
+        CitiesView citiesView = CitiesView.builder()
+                .citiesView(city)
+                .build();
+
+        Template template = Template.builder()
+                .outputs(Collections.singletonList(citiesView))
+                .build();
+
+        res.setTemplate(template);
 
         return res;
     }
