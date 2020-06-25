@@ -33,7 +33,7 @@ public enum WeatherCondition {
                 .filter(i -> weather.contains(weatherInfo.get(i)))
                 .findFirst();
 
-        String w = weatherKey.get(idx.getAsInt());
+        String w = idx.isPresent() ? weatherKey.get(idx.getAsInt()) : "HOT";
         System.out.println("asdasdasd"+ w);
 
         return  w;

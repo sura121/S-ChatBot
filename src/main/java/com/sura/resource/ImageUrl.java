@@ -54,7 +54,7 @@ public enum ImageUrl {
 
         }
 
-        return emoji;
+        return emoji!=null ? emoji: HOT_IMAGE.getEmoji();
     }
 
     public static String findByTempImg(Double temp) {
