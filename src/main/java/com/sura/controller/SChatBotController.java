@@ -37,7 +37,7 @@ public class SChatBotController {
      * @return
      */
     @RequestMapping(value = "/kkoChat/v1" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
-    public ResponseEntity<?> WeatherBot( HttpServletRequest request , HttpServletResponse response) {
+    public ResponseEntity<?> WeatherBot( HttpServletRequest request , HttpServletResponse response) throws Exception {
 
         ResponseVO vo = new ResponseVO("2.0");
 
