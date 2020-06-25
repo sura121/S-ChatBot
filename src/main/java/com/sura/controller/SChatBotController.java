@@ -3,6 +3,7 @@ package com.sura.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sura.domain.ResponseVO;
+import com.sura.domain.component.CitiesView;
 import com.sura.global.ApiCall;
 import com.sura.global.JsonParse;
 import org.slf4j.Logger;
@@ -45,7 +46,7 @@ public class SChatBotController {
 
         try{
 
-            vo = apiCall.reponseApiCall(city);
+            vo = (ResponseVO)apiCall.reponseApiCall(city);
 
             logger.info(vo.toString());
 
@@ -65,19 +66,21 @@ public class SChatBotController {
     @RequestMapping(value = "/kkoChat/cities" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
     public ResponseEntity<?> Cities(HttpServletRequest request , HttpServletResponse response) {
 
-        ResponseVO vo = new ResponseVO("2.0");
+        Object citiesView = new Object();
+
 
         String word = (String) request.getAttribute("city");
 
         try {
 
-            apiCall.reponseApiCall(word);
+            citiesView = apiCall.reponseApiCall(word);
+
 
         }catch (Exception e) {
             e.getStackTrace();
         }
 
-        return ResponseEntity.ok(vo);
+        return ResponseEntity.ok(citiesView);
     }
 
 }

@@ -169,7 +169,7 @@ public enum Cities {
 
     private String city;
 
-    public Cities(String city) {
+    Cities(String city) {
         this.city = city;
     }
 

@@ -4,7 +4,7 @@ import com.sura.domain.ResponseVO;
 import com.sura.domain.component.BasicCardView;
 import com.sura.domain.component.CitiesView;
 import com.sura.domain.subtype.BasicCard;
-import com.sura.domain.subtype.City;
+import com.sura.domain.subtype.CityList;
 import com.sura.domain.subtype.Template;
 import com.sura.resource.Cities;
 import com.sura.resource.ConfigResource;
@@ -20,7 +20,6 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.Collections;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 
@@ -99,7 +98,9 @@ public class ApiCall {
         return result;
     }
 
-    public ResponseVO reponseApiCall(String city) throws Exception{
+    public Object reponseApiCall(String city) throws Exception{
+
+        logger.info("api call start");
 
         ResponseVO vo = new ResponseVO("2.0");
 
@@ -109,8 +110,10 @@ public class ApiCall {
 
             if(cityConfirm == null ) {
 
-                if(city == "도시") {
-                   vo = this.cityList();
+                if(city.equals("도시")) {
+                   CitiesView cities = this.cityList();
+                    return  cities;
+
                 } else {
                     weatherText = "검색 불가능한 도시 입니다.";
                     weatherImage="";
@@ -174,13 +177,13 @@ public class ApiCall {
         return vo;
     }
 
-    public ResponseVO cityList () {
+    public CitiesView cityList () {
 
         ResponseVO res = new ResponseVO("2.0");
 
+        logger.info("city list come ....");
 
-
-        City city = City.builder()
+        CityList city = CityList.builder()
                 .cityName("서울")
                 .build();
 
@@ -188,13 +191,9 @@ public class ApiCall {
                 .citiesView(city)
                 .build();
 
-        Template template = Template.builder()
-                .outputs(Collections.singletonList(citiesView))
-                .build();
 
-        res.setTemplate(template);
 
-        return res;
+        return citiesView;
     }
 
 }
