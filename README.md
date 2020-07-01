@@ -1,5 +1,5 @@
-# S-ChatBot
-카카오채널 챗봇
+# 카카오채널 날씨 챗봇
+
 
 [![language](https://img.shields.io/github/languages/count/sura121/S-chatbot)](https://github.com/sura121/S-ChatBot) [![Code Size](https://img.shields.io/github/languages/code-size/sura121/S-chatbot)]() [![Commit](https://img.shields.io/github/commit-activity/w/sura121/S-chatbot)]() [![Latest Commit](https://img.shields.io/github/last-commit/sura121/S-chatbot)]()
 

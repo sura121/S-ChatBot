@@ -98,8 +98,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="45">
-                <caret line="3" column="361" selection-start-line="3" selection-start-column="361" selection-end-line="3" selection-end-column="361" />
+              <first_editor>
+                <caret column="11" selection-start-column="11" selection-end-column="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -677,7 +677,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="192913000" />
+    <option name="totallyTimeSpent" value="193067000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1135,8 +1135,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="45">
-            <caret line="3" column="361" selection-start-line="3" selection-start-column="361" selection-end-line="3" selection-end-column="361" />
+          <first_editor>
+            <caret column="11" selection-start-column="11" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
