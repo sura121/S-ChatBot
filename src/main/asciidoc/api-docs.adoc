@@ -1,12 +1,6 @@
-= 상품
-== 상품 조회
-include::{snippets}/news-controller-test/조회_상품/http-request.adoc[]
-include::{snippets}/news-controller-test/조회_상품/path-parameters.adoc[]
-include::{snippets}/news-controller-test/조회_상품/http-response.adoc[]
+= 카카오 채널 봇 API
 
-
-== 상품 추가
-include::{snippets}/news-controller-test/조회_상품/http-request.adoc[]
-include::{snippets}/news-controller-test/조회_상품/path-parameters.adoc[]
-include::{snippets}/news-controller-test/조회_상품/http-response.adoc[]
+== 폴백
+include::{snippets}/s-chat-bot-controller-test/날씨_조회/http-request.adoc[]
+include::{snippets}/s-chat-bot-controller-test/날씨_조회/http-response.adoc[]
 

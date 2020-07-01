@@ -14,6 +14,7 @@ import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -103,7 +104,7 @@ public class ApiCall {
         logger.info("api call start");
 
         ResponseVO vo = new ResponseVO("2.0");
-
+        logger.info("도시 파라미터 : " + city);
         Cities cityConfirm = Cities.findByCity(city);
 
         try {
