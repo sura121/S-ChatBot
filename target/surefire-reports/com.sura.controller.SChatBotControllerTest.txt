@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.sura.controller.SChatBotControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.506 s - in com.sura.controller.SChatBotControllerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.495 s - in com.sura.controller.SChatBotControllerTest

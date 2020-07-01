@@ -1,7 +1,7 @@
 [source,http,options="nowrap"]
 ----
 HTTP/1.1 200 OK
-Content-Length: 515
+Content-Length: 512
 Content-Type: application/json;charset=UTF-8
 
 {
@@ -11,7 +11,7 @@ Content-Type: application/json;charset=UTF-8
         "thumbnail" : {
           "imageUrl" : "https://www.google.com/url?sa=i&url=http%3A%2F%2Fwww.hyonews.com%2Fxe%2F72556&psig=AOvVaw163gj31uoUK_WQ-ic1MgUd&ust=1592459601895000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjsw7mUiOoCFQAAAAAdAAAAABAR"
         },
-        "description" : "현재 날씨 : 온흐림 ☁️  \n현재 온도 : 23.72 \n최고 온도 : 24 ",
+        "description" : "현재 날씨 : 온흐림 ☁️  \n현재 온도 : 24 \n최고 온도 : 24 ",
         "title" : "날씨 정보 입니다."
       }
     } ]
