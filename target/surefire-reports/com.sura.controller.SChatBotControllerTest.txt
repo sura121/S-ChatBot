@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.sura.controller.SChatBotControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 2.51 s <<< FAILURE! - in com.sura.controller.SChatBotControllerTest
+날씨_조회(com.sura.controller.SChatBotControllerTest)  Time elapsed: 0.04 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.sura.controller.SChatBotControllerTest.setUp(SChatBotControllerTest.java:69)
+
+도시_리스트(com.sura.controller.SChatBotControllerTest)  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.sura.controller.SChatBotControllerTest.setUp(SChatBotControllerTest.java:69)
+

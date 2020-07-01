@@ -1,34 +1,78 @@
 package com.sura.controller;
 
+import com.sura.TestConfig;
+import com.sura.filter.WeatherFilter;
+import org.junit.Before;
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.*;
 import org.springframework.http.MediaType;
+import org.springframework.mock.web.MockFilterChain;
+import org.springframework.mock.web.MockHttpServletRequest;
+import org.springframework.mock.web.MockHttpServletResponse;
+import org.springframework.restdocs.JUnitRestDocumentation;
+import org.springframework.restdocs.mockmvc.RestDocumentationResultHandler;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.test.web.servlet.ResultActions;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
+import org.springframework.web.context.WebApplicationContext;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import javax.servlet.Filter;
+import javax.servlet.FilterConfig;
+import javax.servlet.ServletException;
+import java.io.IOException;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.documentationConfiguration;
+import static org.springframework.restdocs.operation.preprocess.Preprocessors.preprocessResponse;
+import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.request;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest
-@AutoConfigureMockMvc
+@SpringBootTest(classes = TestConfig.class)
+//@WebAppConfiguration
+@PropertySource(ignoreResourceNotFound = true,value = "classpath:application.properties")
 public class SChatBotControllerTest {
 
+    @Rule
+    public JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation();
+
     @Autowired
+    private WebApplicationContext context;
     private MockMvc mockMvc;
+    private RestDocumentationResultHandler document;
+
+
+    @Before
+    public void setUp() {
+
+        this.document = document(
+                "{class-name}/{method-name}",
+                preprocessResponse(prettyPrint())
+        );
+
+        this.mockMvc = MockMvcBuilders.webAppContextSetup(this.context)
+                .apply(documentationConfiguration(this.restDocumentation))
+                .alwaysDo(document)
+                .addFilters(new WeatherFilter())
+                .build();
+
+    }
 
 
     @Test
-    public void helloBot() throws Exception {
+    public void 날씨_조회() throws Exception {
 
-        ResultActions result = this.mockMvc.perform(post("/chat/kkoChat/v1")
-        .contentType(MediaType.APPLICATION_JSON)
+        this.mockMvc.perform(post("/chat/kkoChat/v1")
+        .accept(MediaType.APPLICATION_JSON)
         .content("{\n" +
                 "  \"intent\": {\n" +
                 "    \"id\": \"8lgsct2k2smg1x5do2t09m29\",\n" +
@@ -43,7 +87,7 @@ public class SChatBotControllerTest {
                 "      \"id\": \"8lgsct2k2smg1x5do2t09m29\",\n" +
                 "      \"name\": \"블록 이름\"\n" +
                 "    },\n" +
-                "    \"utterance\": \"발화 내용\",\n" +
+                "    \"utterance\": \"서울\",\n" +
                 "    \"lang\": null,\n" +
                 "    \"user\": {\n" +
                 "      \"id\": \"842040\",\n" +
@@ -71,9 +115,9 @@ public class SChatBotControllerTest {
 
 
     @Test
-    public void Cities() throws Exception {
+    public void 도시_리스트() throws Exception {
 
-        ResultActions result = this.mockMvc.perform(post("/chat/kkoChat/cities")
+        this.mockMvc.perform(post("/chat/kkoChat/cities")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content("{\n" +
                         "  \"intent\": {\n" +
