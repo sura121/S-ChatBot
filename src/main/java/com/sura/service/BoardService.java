@@ -2,17 +2,16 @@ package com.sura.service;
 
 import com.sura.domain.BoardVO;
 import com.sura.repository.BoardRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import javax.persistence.EntityManager;
-import java.util.*;
 
 @Service
 public class BoardService {
 
-    @Autowired
-    private BoardRepository boardRepository;
+    private final BoardRepository boardRepository;
+
+    public BoardService(BoardRepository boardRepository) {
+        this.boardRepository = boardRepository;
+    }
 
     public Long SavePost(BoardVO boardVO) {
 
