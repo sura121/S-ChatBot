@@ -139,31 +139,31 @@ public class ApiCall {
 
                 weatherImage =imgUrl;
 
-                HashMap<String, Object> imageUrl = new HashMap<>();
-
-                imageUrl.put("imageUrl",weatherImage);
-
-                BasicCard basicCard = BasicCard.builder()
-                        .thumbnail(imageUrl)
-                        .description(weatherText)
-                        .title("날씨 정보 입니다.")
-                        .build();
-
-                BasicCardView basicCardView = BasicCardView.builder()
-                        .basicCard(basicCard)
-                        .build();
-
-                Template template = Template.builder()
-                        .outputs(Collections.singletonList(basicCardView))
-                        .build();
-                logger.info("===================================");
-                logger.info("template : " + template.toString());
-                logger.info("===================================");
-                vo.setTemplate(template);
-
-                logger.info(vo.toString());
-
             }
+
+            HashMap<String, Object> imageUrl = new HashMap<>();
+
+            imageUrl.put("imageUrl",weatherImage);
+
+            BasicCard basicCard = BasicCard.builder()
+                    .thumbnail(imageUrl)
+                    .description(weatherText)
+                    .title("날씨 정보 입니다.")
+                    .build();
+
+            BasicCardView basicCardView = BasicCardView.builder()
+                    .basicCard(basicCard)
+                    .build();
+
+            Template template = Template.builder()
+                    .outputs(Collections.singletonList(basicCardView))
+                    .build();
+            logger.info("===================================");
+            logger.info("template : " + template.toString());
+            logger.info("===================================");
+            vo.setTemplate(template);
+
+            logger.info(vo.toString());
 
 
 
@@ -190,7 +190,6 @@ public class ApiCall {
         CitiesView citiesView = CitiesView.builder()
                 .citiesView(city)
                 .build();
-
 
 
         return citiesView;
