@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/asciidoc/api-docs.adoc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/asciidoc/api-docs.adoc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/config/MyHttpServletWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/config/MyHttpServletWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sura/controller/NewsControllerTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/Chatbot.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/config/MyHttpServletWrapper$ServletInputStreamImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/config/MyHttpServletWrapper$ServletInputStreamImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/config/MyHttpServletWrapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/config/MyHttpServletWrapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/global/ApiCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/global/ApiCall.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/service/BoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/service/BoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/curl-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/http-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/http-response.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/httpie-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/request-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가/response-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/curl-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/http-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/http-response.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/httpie-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/request-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/상품_추가_1/response-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/curl-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/http-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/http-response.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/httpie-request.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/path-parameters.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/request-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/generated-snippets/news-controller-test/조회_상품/response-body.adoc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.controller.BoardControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.sura.controller.NewsControllerTest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sura.controller.BoardControllerTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.sura.controller.NewsControllerTest.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sura/controller/NewsControllerTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sura/controller/SChatBotControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sura/controller/SChatBotControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -122,14 +82,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+            <state relative-caret-position="378">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="45">
+                <caret line="3" column="361" selection-start-line="3" selection-start-column="361" selection-end-line="3" selection-end-column="361" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -175,15 +147,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
             </state>
           </provider>
         </entry>
@@ -244,7 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/BoardVO.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sura/controller/BoardControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/ApiKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/Coordinates.java" />
@@ -295,6 +257,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -714,7 +677,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191995000" />
+    <option name="totallyTimeSpent" value="192913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,13 +737,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/aop/RequestKeyword.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1062,13 +1018,7 @@
     <entry file="file://$PROJECT_DIR$/Chatbot.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/NewsControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="37" column="11" lean-forward="true" selection-end-line="91" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/NewsControllerTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/JsonParse.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -1086,13 +1036,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/application.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -1107,13 +1051,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/PropertyTestConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/PropertyTestConfiguration.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ApiKeys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1186,11 +1124,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        <state relative-caret-position="378">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="45">
+            <caret line="3" column="361" selection-start-line="3" selection-start-column="361" selection-end-line="3" selection-end-column="361" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

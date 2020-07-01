@@ -1,4 +1,8 @@
 [source,options="nowrap"]
 ----
-
+{
+  "citiesView" : {
+    "cityName" : "서울"
+  }
+}
 ----
