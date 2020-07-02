@@ -86,7 +86,7 @@ open weather API에서 도시명 또는 위도, 경도에 대한 parameter를 �
  
 스킬서버 Response
 -
- - 스킬서버에서 Kakao 오픈빌더 문서에 맞게 response를 보내게됩니다. 
+ - 스킬서버에서 Kakao 오픈빌더에 응답별 Json포맷에 맞게 리턴 메시지를 보내줍니다.
 ```json
 {
   "template" : {
@@ -126,6 +126,15 @@ open weather API에서 도시명 또는 위도, 경도에 대한 parameter를 �
 Rest Docs 적용
 -
 ![flow](restdocs.png)
+
+추가 및 보완 사항
+===
+ 현재 개발을 진행하면서 속도가 더디더라도 클린코드와 적용하고싶은 부분을 확실히 진행하고 싶습니다.
+
+- 웰컴 블록, 탈출 블록에 대한 스킬서버 지정 
+- 발화 메시지에대한 AI 학습 추가
+- TDD 및 API 문서화를 진행하기 위한 Rest Docs 활용 추가
+- 도메인 모델 재설계
 
 
 
