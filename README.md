@@ -107,8 +107,6 @@ open weather API에서 도시명 또는 위도, 경도에 대한 parameter를 �
 ```
 ![Weather](날씨정보.png)
 
-
-
  API 명세를 위한 Rest Docs 도입
  ==
 -  **Rest Docs 도입 이유**
