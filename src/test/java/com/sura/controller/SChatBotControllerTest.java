@@ -1,7 +1,9 @@
 package com.sura.controller;
 
 import com.sura.TestConfig;
+import com.sura.domain.weatherinfo.Weather;
 import com.sura.filter.WeatherFilter;
+import com.sura.repository.WeatherRepository;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -16,6 +18,14 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
+
+import java.util.Date;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+import java.time.LocalDate;
+import java.util.zip.DataFormatException;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -40,6 +50,7 @@ public class SChatBotControllerTest {
     private WebApplicationContext context;
     private MockMvc mockMvc;
     private RestDocumentationResultHandler document;
+    private WeatherRepository weatherRepository;
 
 
     @Before
@@ -149,13 +160,26 @@ public class SChatBotControllerTest {
     }
 
     @Test
-    public void testCode() {
+    public void testCode() throws ParseException {
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
-        int var = 10;
-        String nullTest = null;
+        Date date = new Date();
 
-        System.out.println("asd");
-        assertThat(nullTest,is(nullValue()));
+        String ts = df.format(date.getTime());
+        System.out.println(ts);
+        java.sql.Date dt = java.sql.Date.valueOf(ts);
+
+        System.out.println(dt);
+
+
+        Weather we = Weather.builder().city("서울").date(dt).temp(36.5).build();
+
+        System.out.println(we.toString());
+//
+//        Weather id = weatherRepository.save(we);
+//        System.out.println(id.toString());
+
+//        assertThat(nullTest,is(nullValue()));
     }
 
 }
