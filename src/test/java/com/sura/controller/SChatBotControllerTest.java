@@ -24,9 +24,6 @@ import java.util.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-import java.time.LocalDate;
-import java.util.zip.DataFormatException;
-
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.IsNull.nullValue;
@@ -43,6 +40,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.
 @PropertySource(ignoreResourceNotFound = true,value = "classpath:application.properties")
 public class SChatBotControllerTest {
 
+
+
     @Rule
     public JUnitRestDocumentation restDocumentation = new JUnitRestDocumentation();
 
@@ -50,7 +49,12 @@ public class SChatBotControllerTest {
     private WebApplicationContext context;
     private MockMvc mockMvc;
     private RestDocumentationResultHandler document;
-    private WeatherRepository weatherRepository;
+
+    @Autowired
+    private  WeatherRepository weatherRepository;
+
+
+
 
 
     @Before
@@ -176,8 +180,8 @@ public class SChatBotControllerTest {
 
         System.out.println(we.toString());
 //
-//        Weather id = weatherRepository.save(we);
-//        System.out.println(id.toString());
+        Weather id = weatherRepository.save(we);
+        System.out.println(id.toString());
 
 //        assertThat(nullTest,is(nullValue()));
     }

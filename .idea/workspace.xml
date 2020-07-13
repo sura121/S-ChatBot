@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/domain/weatherinfo/Weather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/domain/weatherinfo/Weather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather$WeatherBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather$WeatherBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/sura/controller/SChatBotControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/sura/controller/SChatBotControllerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="174" column="14" lean-forward="true" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+            <state relative-caret-position="362">
+              <caret line="177" selection-start-line="177" selection-end-line="177" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/weatherinfo/Weather.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="416">
+              <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +103,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/repository/WeatherRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+              <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -365,7 +377,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sura" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sura" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
@@ -601,44 +622,44 @@
       <workItem from="1593414704416" duration="11439000" />
       <workItem from="1594187425500" duration="1035000" />
       <workItem from="1594267708390" duration="9000" />
-      <workItem from="1594374820248" duration="5146000" />
+      <workItem from="1594374820248" duration="8330000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 24m 02s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 59m 17s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 32m 47s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 19h 00m 24s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 41m 51s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 28m 00s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 43m 04s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 28m 14s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 51m 27s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 30m 59s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 51m 56s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 45m 19s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 52m 48s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 48m 11s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 53m 54s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 53m 36s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 54m 23s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 54m 37s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.12 at 18h 58m 26s.xml">
+    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 14h 03m 38s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209974000" />
+    <option name="totallyTimeSpent" value="213158000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -653,7 +674,7 @@
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.16971917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.16971917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -664,7 +685,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.32857144" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -864,13 +885,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2565">
-          <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ApiKeys.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1021,17 +1035,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/repository/WeatherRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <caret line="7" column="73" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="171" column="4" selection-start-line="171" selection-start-column="4" selection-end-line="171" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="174" column="14" lean-forward="true" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
+        <state relative-caret-position="362">
+          <caret line="177" selection-start-line="177" selection-end-line="177" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1040,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/weatherinfo/Weather.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="416">
+          <caret line="46" column="25" lean-forward="true" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
