@@ -6,6 +6,8 @@ import com.sura.domain.component.CitiesView;
 import com.sura.domain.subtype.BasicCard;
 import com.sura.domain.subtype.CityList;
 import com.sura.domain.subtype.Template;
+import com.sura.domain.weatherinfo.Weather;
+import com.sura.repository.WeatherRepository;
 import com.sura.resource.Cities;
 import com.sura.resource.ConfigResource;
 import com.sura.resource.ImageUrl;
@@ -14,7 +16,6 @@ import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -32,14 +33,22 @@ public class ApiCall {
 
     private final static Logger logger = LoggerFactory.getLogger(ApiCall.class);
 
+    private final WeatherRepository weatherRepository;
+    private  final RestTemplate googleApiRes;
+
     private String weatherText;
     private String weatherImage;
 
-    @Autowired
-    private RestTemplate googleApiRes;
+
 
     private final static String G_END_POINT = "https://maps.googleapis.com/maps/api/geocode/json";
     private final static String W_END_POINT = "https://api.openweathermap.org/data/2.5/weather";
+
+    @Autowired
+    public ApiCall(WeatherRepository weatherRepository, RestTemplate googleApiRes) {
+        this.weatherRepository = weatherRepository;
+        this.googleApiRes = googleApiRes;
+    }
 
     public JSONObject apiCall(String city) {
 
@@ -106,6 +115,7 @@ public class ApiCall {
         ResponseVO vo = new ResponseVO("2.0");
         logger.info("도시 파라미터 : " + city);
         Cities cityConfirm = Cities.findByCity(city);
+        Double doubleTemp = null;
 
         try {
 
@@ -137,6 +147,7 @@ public class ApiCall {
                         mainWeather.get("description"),imgInfo,temp.get("temp"), temp.get("temp_max"));
 
                 String imgUrl = ImageUrl.findByTempImg(templ);
+                doubleTemp = Double.parseDouble(temp.get("temp").toString());
 
                 weatherImage =imgUrl;
 
@@ -165,6 +176,13 @@ public class ApiCall {
             vo.setTemplate(template);
 
             logger.info(vo.toString());
+
+            Weather weather = Weather.builder()
+                    .temp(doubleTemp)
+                    .city(city)
+                    .build();
+
+            Weather w = weatherRepository.save(weather);
 
 
 

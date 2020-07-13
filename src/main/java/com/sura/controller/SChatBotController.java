@@ -77,6 +77,7 @@ public class SChatBotController {
             citiesView = apiCall.reponseApiCall(word);
 
 
+
         }catch (Exception e) {
             e.getStackTrace();
         }

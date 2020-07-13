@@ -4,6 +4,7 @@ import com.sura.TestConfig;
 import com.sura.domain.weatherinfo.Weather;
 import com.sura.filter.WeatherFilter;
 import com.sura.repository.WeatherRepository;
+import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -176,12 +177,14 @@ public class SChatBotControllerTest {
         System.out.println(dt);
 
 
-        Weather we = Weather.builder().city("서울").date(dt).temp(36.5).build();
+        Weather we = Weather.builder().city("서울").temp(36.5).build();
 
         System.out.println(we.toString());
 //
         Weather id = weatherRepository.save(we);
         System.out.println(id.toString());
+
+//        assertThat(id, CoreMatchers.is(Weather.builder()));
 
 //        assertThat(nullTest,is(nullValue()));
     }

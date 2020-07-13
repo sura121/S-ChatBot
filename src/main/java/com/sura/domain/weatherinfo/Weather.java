@@ -10,6 +10,7 @@ import org.hibernate.annotations.UpdateTimestamp;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 
 @Table(name = "WEATHER")
@@ -41,9 +42,9 @@ public class Weather {
     private Double temp;
 
     @Builder
-    private Weather(String city, Date date, Double temp){
+    private Weather(String city, Double temp){
         this.city = city;
-        this.date = date;
+        this.date = getDateTime();
         this.temp = temp;
     }
 //
@@ -61,6 +62,19 @@ public class Weather {
         }
 
         return  false;
+    }
+
+    protected Date getDateTime() {
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+        java.util.Date date = new java.util.Date();
+
+        String ts = df.format(date.getTime());
+        System.out.println(ts);
+        java.sql.Date dt = java.sql.Date.valueOf(ts);
+
+        return dt;
     }
 
 
