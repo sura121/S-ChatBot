@@ -42,12 +42,13 @@ public class Weather {
     private Double temp;
 
     @Builder
-    private Weather(String city, Double temp){
+    public Weather(String city, Double temp){
+        cityNullCheck(city);
         this.city = city;
         this.date = getDateTime();
         this.temp = temp;
     }
-//
+
 //    @PrePersist
 //    protected void prePersist() {
 //        if(this.created_at == null) {
@@ -55,16 +56,15 @@ public class Weather {
 //        }
 //    }
 
-    private boolean citiNullCheck(String city) {
+    private void cityNullCheck(String city) {
 
         if(Cities.findByCity(city) == null ){
-            return  true;
+            throw new IllegalArgumentException("존재하지 않는 도시 입니다.");
         }
 
-        return  false;
     }
 
-    protected Date getDateTime() {
+    private Date getDateTime() {
 
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
