@@ -81,7 +81,7 @@ public class SChatBotController {
         }catch (Exception e) {
             e.getStackTrace();
         }
-        logger.info(citiesView.toString());
+
         return ResponseEntity.ok(citiesView);
     }
 

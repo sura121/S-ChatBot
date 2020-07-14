@@ -170,12 +170,8 @@ public class ApiCall {
             Template template = Template.builder()
                     .outputs(Collections.singletonList(basicCardView))
                     .build();
-            logger.info("===================================");
-            logger.info("template : " + template.toString());
-            logger.info("===================================");
-            vo.setTemplate(template);
 
-            logger.info(vo.toString());
+            vo.setTemplate(template);
 
             Weather weather = Weather.builder()
                     .temp(doubleTemp)
