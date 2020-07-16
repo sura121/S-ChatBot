@@ -4,6 +4,7 @@ package com.sura.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sura.domain.ResponseVO;
 import com.sura.domain.component.CitiesView;
+import com.sura.domain.component.SimpleTextView;
 import com.sura.domain.subtype.SimpleText;
 import com.sura.domain.subtype.Template;
 import com.sura.domain.subtype.Text;
@@ -90,23 +91,19 @@ public class SChatBotController {
     }
 
     @RequestMapping(value = "/kakaoChat/cities", headers = {"Accept=application/json"})
-    public SimpleText City(HttpServletRequest request, HttpServletResponse response) {
+    public ResponseVO City(HttpServletRequest request, HttpServletResponse response) {
 
+        ResponseVO vo = new ResponseVO("2.0");
         SimpleText smp = new SimpleText("테스트입니다.");
+        SimpleTextView smv = new SimpleTextView(smp);
 
-        logger.info(smp.toString());
+        Template tmp = Template.builder()
+                .outputs(Collections.singletonList(smv))
+                .build();
 
-//        Text txt = Text.builder()
-//                .text("테스트입니다.")
-//                .build();
-//
-//        Template tmp = Template.builder()
-//                .outputs(Collections.singletonList(txt))
-//                .build();
-//
-//        vo.setTemplate(tmp);
+        vo.setTemplate(tmp);
 
-        return smp;
+        return vo;
     }
 
 
