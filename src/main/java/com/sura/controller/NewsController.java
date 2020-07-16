@@ -22,7 +22,7 @@ public class NewsController {
     @Autowired
     private LogService log;
 
-    @GetMapping(value = "/message/{id}")
+    @RequestMapping(value = "/message/{id}")
     public ResponseEntity<?> newsSerach(@PathVariable Integer id) {
 
         log.getLogger("in controller");
@@ -33,7 +33,7 @@ public class NewsController {
         return ResponseEntity.ok(message);
     }
 
-    @PostMapping(value = "/message/add")
+    @RequestMapping(value = "/message/add")
     public ResponseEntity<?> addNews(@RequestBody MessageVO vo) {
 
 
@@ -42,14 +42,14 @@ public class NewsController {
         return  ResponseEntity.ok(message);
     }
 
-    @GetMapping(value = "/message")
+    @RequestMapping(value = "/message")
     public ResponseEntity<?> allSearch() {
 
         List<MessageVO> message = new ArrayList<>();
         return ResponseEntity.ok(message);
     }
 
-    @GetMapping(value = "/enumtest/{citis}")
+    @RequestMapping(value = "/enumtest/{citis}")
     public void enumTest(@PathVariable("citis") String city)
     {
         Cities citi = Cities.findByCity(city);
