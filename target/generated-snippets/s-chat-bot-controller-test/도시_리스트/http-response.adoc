@@ -1,12 +1,17 @@
 [source,http,options="nowrap"]
 ----
 HTTP/1.1 200 OK
-Content-Length: 52
 Content-Type: application/json;charset=UTF-8
+Content-Length: 134
 
 {
-  "citiesView" : {
-    "cityName" : "서울"
-  }
+  "template" : {
+    "outputs" : [ {
+      "citiesView" : {
+        "cityName" : "서울"
+      }
+    } ]
+  },
+  "version" : "2.0"
 }
 ----

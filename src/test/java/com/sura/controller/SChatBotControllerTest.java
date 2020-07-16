@@ -94,7 +94,7 @@ public class SChatBotControllerTest {
                 "      \"id\": \"8lgsct2k2smg1x5do2t09m29\",\n" +
                 "      \"name\": \"블록 이름\"\n" +
                 "    },\n" +
-                "    \"utterance\": \"서울\",\n" +
+                "    \"utterance\": \"도시\",\n" +
                 "    \"lang\": null,\n" +
                 "    \"user\": {\n" +
                 "      \"id\": \"842040\",\n" +

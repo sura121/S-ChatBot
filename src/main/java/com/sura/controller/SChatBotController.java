@@ -49,6 +49,7 @@ public class SChatBotController {
 
             vo = (ResponseVO)apiCall.reponseApiCall(city);
 
+            logger.info("response data");
             logger.info(vo.toString());
 
         }catch (Exception e){
@@ -66,6 +67,8 @@ public class SChatBotController {
      */
     @RequestMapping(value = "/kkoChat/cities" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
     public ResponseEntity<?> Cities(HttpServletRequest request , HttpServletResponse response) {
+
+        logger.info("스킬블록 추가 in...");
 
         Object citiesView = new Object();
 

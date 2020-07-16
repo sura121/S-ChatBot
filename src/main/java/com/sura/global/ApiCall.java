@@ -122,7 +122,7 @@ public class ApiCall {
             if(cityConfirm == null ) {
 
                 if(city.equals("도시")) {
-                   CitiesView cities = this.cityList();
+                   Object cities = this.cityList();
                     return  cities;
 
                 } else {
@@ -192,9 +192,9 @@ public class ApiCall {
         return vo;
     }
 
-    public CitiesView cityList () {
+    public Object cityList () {
 
-        ResponseVO res = new ResponseVO("2.0");
+        ResponseVO vo = new ResponseVO("2.0");
 
         logger.info("city list come ....");
 
@@ -206,8 +206,13 @@ public class ApiCall {
                 .citiesView(city)
                 .build();
 
+        Template tmp =  Template.builder()
+                .outputs(Collections.singletonList(citiesView))
+                .build();
 
-        return citiesView;
+        vo.setTemplate(tmp);
+
+        return vo;
     }
 
 }

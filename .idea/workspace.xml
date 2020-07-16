@@ -4,15 +4,11 @@
     <list default="true" id="f9dd5053-844e-4e73-9dce-e32641a799f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/domain/LogVO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sura/resource/WeatherCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sura/resource/WeatherCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/LogVO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather$WeatherBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather$WeatherBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/domain/weatherinfo/Weather.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/controller/SChatBotController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/controller/SChatBotController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sura/global/ApiCall.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sura/global/ApiCall.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,51 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="83" selection-start-line="83" selection-end-line="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/MessageVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#190#191#0" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/config/FilterConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#720#721#0" expanded="true" />
-                <element signature="e#762#763#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/filter/WeatherFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+              <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,19 +53,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/ResponseVO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2165">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/config/MyHttpServletWrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="421">
-              <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+            <state relative-caret-position="225">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -117,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-872">
-              <caret line="123" column="39" lean-forward="true" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+            <state relative-caret-position="555">
+              <caret line="208" column="42" lean-forward="true" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,28 +77,81 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="105">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/WeatherCondition.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="150">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/CitiesView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="59" column="38" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="38" />
+            <state relative-caret-position="195">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="e#349#350#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#440#441#0" expanded="true" />
+                <element signature="e#473#474#0" expanded="true" />
+                <element signature="e#516#517#0" expanded="true" />
+                <element signature="e#552#553#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-977">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ConfigResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -164,14 +164,13 @@
         <option value="HTML File" />
         <option value="Enum" />
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>부산</find>
       <find>template</find>
       <find>findByGetEmoji</find>
       <find>common</find>
@@ -201,6 +200,7 @@
       <find>logger</find>
       <find>city list</find>
       <find>cityList</find>
+      <find>vo</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -212,7 +212,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/Coordinates.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/global/RestTemplateErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/ApiController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/MessageVO.java" />
@@ -236,7 +235,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/sura/resource/WeatherConditionTest.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/filter/RequestFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/config/FilterConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/interceptor/RequestKeyword.java" />
@@ -244,7 +242,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sura/filter/WeatherFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/component/Cities.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/City.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/component/CitiesView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/service/BoardService.java" />
@@ -256,13 +253,16 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/repository/WeatherRepository.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/weatherinfo/Weather.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/WeatherCondition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/global/CommonUtil.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java" />
       </list>
     </option>
   </component>
@@ -298,9 +298,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
-    <option name="width" value="1680" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="863" />
+    <option name="y" value="23" />
+    <option name="width" value="817" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -308,8 +310,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,6 +362,35 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sura" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sura" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sura" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Chatbot" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sura" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+              <item name="subtype" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="surachatbot" type="b2602c69:ProjectViewProjectNode" />
@@ -515,7 +546,20 @@
     </option>
     <option name="contentProportion" value="0.19068323" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootApplication">
+  <component name="RunManager" selected="JUnit.SChatBotControllerTest.도시_리스트">
+    <configuration name="CommonUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sura.global.CommonUtil" />
+      <module name="Chatbot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sura.global.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SChatBotControllerTest.Cities" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Chatbot" />
       <extension name="coverage">
@@ -548,6 +592,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SChatBotControllerTest.도시_리스트" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Chatbot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.sura.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.sura.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.sura.controller.SChatBotControllerTest" />
+      <option name="METHOD_NAME" value="도시_리스트" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SChatBotControllerTest.testCode" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="Chatbot" />
       <extension name="coverage">
@@ -559,22 +619,6 @@
       <option name="PACKAGE_NAME" value="com.sura.controller" />
       <option name="MAIN_CLASS_NAME" value="com.sura.controller.SChatBotControllerTest" />
       <option name="METHOD_NAME" value="testCode" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WeatherConditionTest.getKeyIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Chatbot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.sura.resource.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.sura.resource" />
-      <option name="MAIN_CLASS_NAME" value="com.sura.resource.WeatherConditionTest" />
-      <option name="METHOD_NAME" value="getKeyIndex" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -595,10 +639,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SpringBootApplication" />
+        <item itemvalue="JUnit.SChatBotControllerTest.도시_리스트" />
         <item itemvalue="JUnit.SChatBotControllerTest.날씨_조회" />
+        <item itemvalue="Spring Boot.SpringBootApplication" />
+        <item itemvalue="Application.CommonUtil" />
         <item itemvalue="JUnit.SChatBotControllerTest.Cities" />
-        <item itemvalue="JUnit.WeatherConditionTest.getKeyIndex" />
       </list>
     </recent_temporary>
   </component>
@@ -632,26 +677,12 @@
       <workItem from="1594187425500" duration="1035000" />
       <workItem from="1594267708390" duration="9000" />
       <workItem from="1594374820248" duration="11144000" />
-      <workItem from="1594702762019" duration="3338000" />
+      <workItem from="1594702762019" duration="4661000" />
+      <workItem from="1594889916439" duration="2715000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 30m 59s.xml">
-      <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 45m 19s.xml">
-      <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 48m 11s.xml">
-      <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 53m 36s.xml">
-      <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 13h 54m 37s.xml">
-      <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 14h 03m 38s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
@@ -667,9 +698,24 @@
     <history-entry file="SChatBotControllerTest_testCode - 2020.07.13 at 16h 38m 45s.xml">
       <configuration name="SChatBotControllerTest.testCode" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SChatBotControllerTest_도시_리스트 - 2020.07.16 at 21h 09m 12s.xml">
+      <configuration name="SChatBotControllerTest.도시_리스트" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SChatBotControllerTest_날씨_조회 - 2020.07.16 at 21h 09m 45s.xml">
+      <configuration name="SChatBotControllerTest.날씨_조회" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SChatBotControllerTest_날씨_조회 - 2020.07.16 at 21h 11m 04s.xml">
+      <configuration name="SChatBotControllerTest.날씨_조회" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SChatBotControllerTest_도시_리스트 - 2020.07.16 at 21h 13m 54s.xml">
+      <configuration name="SChatBotControllerTest.도시_리스트" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SChatBotControllerTest_도시_리스트 - 2020.07.16 at 21h 21m 35s.xml">
+      <configuration name="SChatBotControllerTest.도시_리스트" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219310000" />
+    <option name="totallyTimeSpent" value="223348000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -681,10 +727,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="6" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.17155068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4977169" visible="true" weight="0.17338218" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -695,7 +741,7 @@
       <window_info id="Persistence" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981685" weight="0.32857144" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4981685" visible="true" weight="0.32857144" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -708,7 +754,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="15" visible="true" weight="0.34489796" />
+      <window_info anchor="bottom" id="Run Dashboard" order="15" weight="0.34489796" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -729,40 +775,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/annotation/Autowired.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/list.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/test1.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -791,16 +803,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/BoardController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/repository/BoardRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/service/BoardService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/ResponseVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/TemperatureVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -808,13 +810,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ConfigResource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -836,26 +831,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/CitiesView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -901,16 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="187" selection-start-line="187" selection-end-line="187" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -987,13 +952,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/LogVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/LogVO.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/WeatherCondition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1001,30 +960,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="59" column="38" selection-start-line="59" selection-start-column="25" selection-end-line="59" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2165">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/config/FilterConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
+        <state relative-caret-position="315">
           <caret line="27" column="32" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1036,7 +974,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/filter/WeatherFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="210">
           <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1046,8 +984,132 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/config/MyHttpServletWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="39" column="67" lean-forward="true" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+        <state relative-caret-position="435">
+          <caret line="39" column="67" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="true" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ImageUrl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="59" column="4" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/Cities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/resource/ConfigResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/ResponseVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/sura/controller/SChatBotControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-977">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/BasicCardView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/Template.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#440#441#0" expanded="true" />
+            <element signature="e#473#474#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/component/CitiesView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/BasicCard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/domain/subtype/CityList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="208" column="42" lean-forward="true" selection-start-line="208" selection-start-column="42" selection-end-line="208" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1056,18 +1118,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/controller/SChatBotController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="83" selection-start-line="83" selection-end-line="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sura/global/ApiCall.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-872">
-          <caret line="123" column="39" lean-forward="true" selection-start-line="123" selection-start-column="39" selection-end-line="123" selection-end-column="39" />
+        <state relative-caret-position="405">
+          <caret line="70" column="34" selection-start-line="70" selection-start-column="34" selection-end-line="70" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
