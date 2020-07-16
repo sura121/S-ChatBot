@@ -17,7 +17,7 @@ public class FilterConfig {
         FilterRegistrationBean filterRegistrationBean = new FilterRegistrationBean();
 
         filterRegistrationBean.setFilter( weatherDofilter());
-        filterRegistrationBean.addUrlPatterns("/chat/*");
+        filterRegistrationBean.addUrlPatterns("/chat/kkoChat/*");
 
 
         return filterRegistrationBean;
