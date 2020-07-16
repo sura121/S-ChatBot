@@ -59,7 +59,6 @@ public enum ImageUrl {
 
     public static String findByTempImg(Double temp) {
 
-        System.out.println(temp);
         String imageUrl = null;
 
         if(temp < 0 ) {

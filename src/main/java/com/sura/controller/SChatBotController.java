@@ -4,6 +4,8 @@ package com.sura.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.sura.domain.ResponseVO;
 import com.sura.domain.component.CitiesView;
+import com.sura.domain.subtype.Template;
+import com.sura.domain.subtype.Text;
 import com.sura.global.ApiCall;
 import com.sura.global.JsonParse;
 import org.apache.commons.io.IOUtils;
@@ -11,13 +13,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.Collections;
 import java.util.Map;
 
 @RestController
@@ -49,6 +49,7 @@ public class SChatBotController {
 
             vo = (ResponseVO)apiCall.reponseApiCall(city);
 
+            logger.info("response data");
             logger.info(vo.toString());
 
         }catch (Exception e){
@@ -67,6 +68,8 @@ public class SChatBotController {
     @RequestMapping(value = "/kkoChat/cities" , method= {RequestMethod.POST , RequestMethod.GET },headers = {"Accept=application/json"})
     public ResponseEntity<?> Cities(HttpServletRequest request , HttpServletResponse response) {
 
+        logger.info("스킬블록 추가 in...");
+
         Object citiesView = new Object();
 
 
@@ -77,11 +80,31 @@ public class SChatBotController {
             citiesView = apiCall.reponseApiCall(word);
 
 
+
         }catch (Exception e) {
             e.getStackTrace();
         }
-        logger.info(citiesView.toString());
+
         return ResponseEntity.ok(citiesView);
     }
+
+    @PostMapping(value = "/kakaoChat/cities", headers = {"Accept=application/json"})
+    public ResponseEntity<?> City(HttpServletRequest request, HttpServletResponse response) {
+
+        ResponseVO vo = new ResponseVO("2.0");
+
+        Text txt = Text.builder()
+                .text("테스트입니다.")
+                .build();
+
+        Template tmp = Template.builder()
+                .outputs(Collections.singletonList(txt))
+                .build();
+
+        vo.setTemplate(tmp);
+
+        return ResponseEntity.ok(vo);
+    }
+
 
 }

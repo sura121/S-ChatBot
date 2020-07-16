@@ -1,4 +1,13 @@
 [source,options="nowrap"]
 ----
-
+{
+  "template" : {
+    "outputs" : [ {
+      "citiesView" : {
+        "cityName" : "서울"
+      }
+    } ]
+  },
+  "version" : "2.0"
+}
 ----

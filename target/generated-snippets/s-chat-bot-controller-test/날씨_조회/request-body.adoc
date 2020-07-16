@@ -14,7 +14,7 @@
       "id": "8lgsct2k2smg1x5do2t09m29",
       "name": "블록 이름"
     },
-    "utterance": "서울",
+    "utterance": "도시",
     "lang": null,
     "user": {
       "id": "842040",

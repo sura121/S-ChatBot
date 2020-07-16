@@ -484,11 +484,21 @@ Host: localhost:8080
 <div class="listingblock">
 <div class="content">
 <pre class="highlight nowrap"><code class="language-http" data-lang="http">HTTP/1.1 200 OK
-Content-Length: 43
+Content-Length: 512
 Content-Type: application/json;charset=UTF-8
 
 {
-  "template" : { },
+  "template" : {
+    "outputs" : [ {
+      "basicCard" : {
+        "thumbnail" : {
+          "imageUrl" : "https://www.google.com/url?sa=i&amp;url=http%3A%2F%2Fwww.hyonews.com%2Fxe%2F72556&amp;psig=AOvVaw163gj31uoUK_WQ-ic1MgUd&amp;ust=1592459601895000&amp;source=images&amp;cd=vfe&amp;ved=0CAIQjRxqFwoTCMjsw7mUiOoCFQAAAAAdAAAAABAR"
+        },
+        "description" : "현재 날씨 : 온흐림 ☁️  \n현재 온도 : 24 \n최고 온도 : 24 ",
+        "title" : "날씨 정보 입니다."
+      }
+    } ]
+  },
   "version" : "2.0"
 }</code></pre>
 </div>
@@ -498,7 +508,7 @@ Content-Type: application/json;charset=UTF-8
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-01 15:46:37 KST
+Last updated 2020-07-01 16:32:36 KST
 </div>
 </div>
 </body>
