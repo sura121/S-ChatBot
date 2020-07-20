@@ -4,4 +4,3 @@
 target/
 nohup.out
 *.xml
-*.p12
