@@ -1,7 +1,7 @@
 ## IGNORE FILE 
 
 *.log
-/target/
+target/
 nohup.out
 *.xml
 *.p12
